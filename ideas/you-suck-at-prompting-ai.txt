@@ -1,4 +1,4 @@
-Here's the distilled wisdom from the video, organized into actionable insights:
+Here's the distilled wisdom from the video, organised into actionable insights:
 
 ### Core Philosophy
 1. **AI is a Prediction Engine, Not a Thinker**  

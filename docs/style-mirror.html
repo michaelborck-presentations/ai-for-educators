@@ -164,9 +164,9 @@
                     <!-- Input Content -->
                     <div class="p-6 flex-1 flex flex-col">
                         
-                        <!-- 1. Analyze -->
+                        <!-- 1. Analyse -->
                         <div id="view-analyze" class="view-section flex-1 flex flex-col">
-                            <h3 class="font-bold text-lg mb-2">Analyze Existing Text</h3>
+                            <h3 class="font-bold text-lg mb-2">Analyse Existing Text</h3>
                             <p class="text-sm text-gray-600 mb-4">Paste an email, essay, or blog post you've written.</p>
                             <textarea id="sampleInput" class="neo-input w-full flex-1 p-4 rounded-lg text-sm code-font mb-4 resize-none bg-slate-50" placeholder="Paste text here... (min 100 words)"></textarea>
                             <button onclick="analyzeText()" class="neo-btn bg-blue-400 w-full py-3 rounded-lg flex justify-center items-center gap-2">
@@ -462,7 +462,7 @@
             model: 'gemini-2.0-flash',
             apiKey: ''
         };
-        let activeTab = 'analyze';
+        let activeTab = 'analyse';
 
         // Load settings from localStorage
         function loadSettings() {
@@ -543,7 +543,7 @@
             }
         }
         
-        switchTab('analyze');
+        switchTab('analyse');
 
         // --- Core Logic: Analysis ---
 
@@ -571,7 +571,7 @@
             if(btnTextId) document.getElementById(btnTextId).textContent = "EXTRACTING...";
 
             const systemPrompt = `You are an expert Writing Style Analyzer. 
-            Analyze the provided text and extract a structured "Style DNA" profile.
+            Analyse the provided text and extract a structured "Style DNA" profile.
             Return ONLY a JSON object with these keys:
             - tone: (string, comma separated keywords)
             - structure: (string, description of sentence length/complexity)
@@ -588,7 +588,7 @@
                 populateProfile(data);
             } catch (error) {
                 console.error(error);
-                alert("Error analyzing text: " + error.message);
+                alert("Error analysing text: " + error.message);
             } finally {
                 toggleLoader(loaderId, false);
                 if(btnTextId) document.getElementById(btnTextId).textContent = "EXTRACT STYLE DNA";

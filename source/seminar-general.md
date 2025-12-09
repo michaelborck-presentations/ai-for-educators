@@ -10,7 +10,7 @@
 * **Visual Aid:** 
 
 ## **Part 2: The "Board of Directors" Strategy (15 Minutes)**
-**Goal:** Use your "CEO/Board" idea to teach **Multi-Persona Prompting**. This is highly relevant for business students learning about different organizational roles.
+**Goal:** Use your "CEO/Board" idea to teach **Multi-Persona Prompting**. This is highly relevant for business students learning about different organisational roles.
 
 * **Concept:** instead of asking AI for *one* answer, ask it to simulate *three* conflicting business perspectives.
 * **The Activity (Live Demo):** Pick a simple business idea (e.g., "A coffee shop that doesn't accept cash").

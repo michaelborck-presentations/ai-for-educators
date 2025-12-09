@@ -18,7 +18,7 @@ structured around the speaker's core principles and "flag" system:
 
 ### The "Flag" System: Your Signal for Caution & Action
 
-| **Flag Color** | **Triggering Scenario**                                                                 | **Meaning & Action Required**                                                                                                                               |
+| **Flag Colour** | **Triggering Scenario**                                                                 | **Meaning & Action Required**                                                                                                                               |
 | :------------- | :------------------------------------------------------------------------------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **Yellow Flag** | ⚠️ **Proceed with Caution & Verification**                                                                 |                                                                                             |
 |                | Information from non-`.edu` sources (especially commercial or personal sites).          | **Action:** Cross-reference with `.edu`, `.gov`, or highly reputable `.org` sources.                                                                       |

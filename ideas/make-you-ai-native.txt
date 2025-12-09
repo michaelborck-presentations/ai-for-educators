@@ -1,30 +1,30 @@
-Here's the extracted wisdom from the transcript, organized by the core strategies to move from "AI literate" (Level 2) to "AI native" (Level 3):
+Here's the extracted wisdom from the transcript, organised by the core strategies to move from "AI literate" (Level 2) to "AI native" (Level 3):
 
 **Core Principle:** Redesign workflows assuming an AI collaborator exists. Move beyond just *using* AI to *integrating* it seamlessly into your processes.
 
 **Key Strategies (Simple to Advanced):**
 
 1.  **Leave AI Breadcrumbs (Simple Habit)**
-    *   **Concept:** Treat AI chats as reusable resources, not disposable threads. Organize them by *work context*, not *date*.
+    *   **Concept:** Treat AI chats as reusable resources, not disposable threads. Organise them by *work context*, not *date*.
     *   **How:** After a significant AI conversation (took >10 mins or produced reusable output), copy the unique chat URL and hyperlink it directly into the document where you'll use the output (e.g., Google Doc, Notion project page).
     *   **Pro Tip:** Add context next to the hyperlink (e.g., "Brainstormed outline," "Applied storytelling principles," "Refined talking points") to remind yourself of its purpose.
     *   **Benefit:** Eliminates frustrating searches for past threads. Organizes information by *usage location*, not *source location* (core productivity principle).
 
 2.  **Build an AI Swipe File System (Requires Effort)**
-    *   **Concept:** Instead of generic prompts ("write a proposal"), provide AI with specific, excellent examples from your curated library ("swipe file") to analyze and emulate.
+    *   **Concept:** Instead of generic prompts ("write a proposal"), provide AI with specific, excellent examples from your curated library ("swipe file") to analyse and emulate.
     *   **How:**
         1.  **Curate:** Save excellent examples from your field whenever you encounter them (presentations, emails, reports).
-        2.  **Organize:** Store by *use case* (e.g., "Business Proposals," "Email Outreach," "Report Summaries"), not source or date. Start narrow (2-3 key use cases).
-        3.  **Prompt:** Share examples with AI: "Analyze the [type of work] I've attached. List key patterns in structure/tone. Apply those patterns to my new content below:" [Paste your new content].
+        2.  **Organise:** Store by *use case* (e.g., "Business Proposals," "Email Outreach," "Report Summaries"), not source or date. Start narrow (2-3 key use cases).
+        3.  **Prompt:** Share examples with AI: "Analyse the [type of work] I've attached. List key patterns in structure/tone. Apply those patterns to my new content below:" [Paste your new content].
     *   **Benefit:** AI produces output matching your specific high standards ("what good looks like") instead of generic results. Saves significant time and improves initial quality.
-    *   **Pro Tip:** Start narrow with 2-3 high-frequency tasks. Organize folders strictly by use case.
+    *   **Pro Tip:** Start narrow with 2-3 high-frequency tasks. Organise folders strictly by use case.
 
 3.  **AI-First Task Planning (Hardest but Most Impactful Habit)**
     *   **Concept:** Plan *before* starting a major project. Explicitly break it down into microtasks and decide which AI tools (if any) are best suited for each step.
     *   **How:**
         1.  **Break Down:** Divide complex projects into small, concrete microtasks.
         2.  **Decide:** For each microtask, decide: Manual? AI? If AI, which *specific* tool/model is best?
-        3.  **Execute:** Follow the plan, minimizing context switching and decision fatigue during execution.
+        3.  **Execute:** Follow the plan, minimising context switching and decision fatigue during execution.
     *   **Example Workflow (Newsletter):**
         *   *Goal/Clarify (Manual: Brain dump unique insights)* -> *Fact Check (AI: Notebook LM - low hallucination)* -> *Structure Brief (AI: Gemini - creative writing)* -> *Draft (AI: Specific tool)* -> *Refine (AI: Specific tool)*
     *   **Rule of Thumb:** For projects >1 hour, spend 5-10 minutes upfront mapping steps and tagging AI/manual.
@@ -34,16 +34,16 @@ Here's the extracted wisdom from the transcript, organized by the core strategie
 **Bonus Habit (Ties it Together):**
 
 *   **Maintain a Prompts Database**
-    *   **Concept:** Save every prompt that generates excellent output in a central library organized by *use case*.
+    *   **Concept:** Save every prompt that generates excellent output in a central library organised by *use case*.
     *   **Why:** Avoids the frustration of rewriting a "perfect" prompt from memory. Ensures consistency and leverages past success.
     *   **Pro Tip:** Focus on quality over quantity. Master 10-15 battle-tested prompts you use daily rather than thousands of random ones.
 
 **Underlying Principles for AI Native Workflows:**
 
-*   **Context is King:** Organize AI interactions and outputs by the *work context* where they are needed, not by when they were created or where they originated.
+*   **Context is King:** Organise AI interactions and outputs by the *work context* where they are needed, not by when they were created or where they originated.
 *   **Leverage Examples:** Use high-quality examples to teach AI your specific standards and style (swipe file).
 *   **Plan Before Doing:** Explicitly map out AI integration points for complex tasks to optimize tool choice and efficiency.
 *   **Reuse & Refine:** Treat effective prompts and conversation links as reusable assets to build upon.
 *   **Tool Specialization:** Different AI tools excel at different tasks (e.g., Notebook LM for fact-checking, Gemini for creative writing). Match the tool to the microtask.
 
-**Key Takeaway:** Becoming "AI native" isn't just about knowing how to prompt; it's about fundamentally redesigning your workflow to proactively integrate, organize, and leverage AI as a collaborative partner throughout your process. Start with simple habits like breadcrumbs, build systems like swipe files, and strive for the deep planning of AI-first task design.
+**Key Takeaway:** Becoming "AI native" isn't just about knowing how to prompt; it's about fundamentally redesigning your workflow to proactively integrate, organise, and leverage AI as a collaborative partner throughout your process. Start with simple habits like breadcrumbs, build systems like swipe files, and strive for the deep planning of AI-first task design.

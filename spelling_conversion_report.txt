@@ -1,0 +1,127 @@
+Spelling Conversion Report
+==================================================
+
+Files processed: 22
+Total changes: 82
+
+source/seminar-general.md:
+  • organizational → organisational
+
+content/how-to-tell-whats-real-online.qmd:
+  • Color → Colour
+
+content/critique-toolkit.qmd:
+  • organizational → organisational
+
+docs/style-mirror.html:
+  • Analyze → Analyse
+  • analyze → analyse
+  • analyze → analyse
+  • Analyze → Analyse
+  • Analyze → Analyse
+  • analyzing → analysing
+
+ideas/you-suck-at-prompting-ai.txt:
+  • organized → organised
+
+ideas/ai-lessons.txt:
+  • analyze → analyse
+  • Organizational → Organisational
+
+ideas/make-you-ai-native.txt:
+  • organize → organise
+  • Organize → Organise
+  • Organize → Organise
+  • Organize → Organise
+  • Organize → Organise
+  • organized → organised
+  • organized → organised
+  • Analyze → Analyse
+  • analyze → analyse
+  • minimizing → minimising
+
+ideas/learned-12-years-amazon.txt:
+  • analyze → analyse
+  • personalized → personalised
+  • organizational → organisational
+
+story/how-to-start-a-speech.txt:
+  • realized → realised
+  • center → centre
+
+docs/source/seminar-outline-promotional.html:
+  • center → centre
+  • center → centre
+  • center → centre
+
+docs/source/seminar-general.html:
+  • center → centre
+  • center → centre
+  • center → centre
+  • organizational → organisational
+
+docs/source/marketing.html:
+  • center → centre
+  • center → centre
+  • center → centre
+
+docs/source/instructor-guide.html:
+  • center → centre
+  • center → centre
+  • center → centre
+
+docs/content/seven-techniques.html:
+  • organization → organisation
+  • Analyze → Analyse
+  • Analyze → Analyse
+  • Analyze → Analyse
+  • Analyze → Analyse
+  • Analyze → Analyse
+  • Analyze → Analyse
+  • Analyze → Analyse
+  • centralized → centralised
+  • behavior → behaviour
+  ... and 6 more changes
+
+docs/content/what-are-llms.html:
+  • center → centre
+  • center → centre
+  • center → centre
+
+docs/content/deloitte_AI_hallucinations_report.html:
+  • center → centre
+  • center → centre
+  • center → centre
+
+docs/content/craft-prompting-framework.html:
+  • center → centre
+  • center → centre
+  • center → centre
+
+docs/content/how-to-tell-whats-real-online.html:
+  • Color → Colour
+  • center → centre
+  • center → centre
+  • center → centre
+
+docs/content/critique-toolkit.html:
+  • center → centre
+  • center → centre
+  • center → centre
+  • organizational → organisational
+
+docs/content/ai-to-help-you-use-ai.html:
+  • center → centre
+  • center → centre
+  • center → centre
+
+docs/content/what-is-ai.html:
+  • center → centre
+  • center → centre
+  • center → centre
+
+docs/content/ethics-integrity.html:
+  • center → centre
+  • center → centre
+  • center → centre
+
