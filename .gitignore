@@ -10,3 +10,6 @@ content/*
 !content/*.qmd
 !content/*.md
 !content/*.txt
+
+/.quarto/
+**/*.quarto_ipynb

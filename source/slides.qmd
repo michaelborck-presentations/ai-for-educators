@@ -6,13 +6,12 @@ date: "9 December 2025"
 format: pptx
 ---
 
-## $440,000
+![](images/440000.png)
 
 ::: {.notes}
 Pause for 2-3 seconds before speaking.
 
 "$440,000. That's what the Australian government paid Deloitte for a welfare review report earlier this year."
-:::
 
 ## The Deloitte Case
 
@@ -25,7 +24,6 @@ Pause for 2-3 seconds before speaking.
 
 **The lesson:** AI is confident even when wrong. Verification is essential.
 
-::: {.notes}
 "Their reputation—built over decades—damaged by AI-generated misinformation they didn't verify. Today, I'm going to teach you how to use AI as a strategic thinking partner - and how to avoid becoming the next headline."
 :::
 
@@ -41,8 +39,14 @@ Pause for 2-3 seconds before speaking.
 
 ## Part 1: The AI Mindset
 
+![](images/ai-mindset)
+
+
 ## AI is a Smart Intern Who Hallucinates
 
+![](images/smart-intern.png)
+
+::: {.notes}
 **Key insight:** AI is a **reasoning engine**, not a search engine
 
 - Google finds information that exists
@@ -53,20 +57,29 @@ Pause for 2-3 seconds before speaking.
 
 > Think of AI like a brilliant intern. They're eager, fast, and can do amazing work. But they might confidently present completely made-up statistics.
 
+:::
+
+
+
 ## The Golden Rule
 
-::: {.center}
+![](images/robot-think.png)
+
+::: {.notes}
 **AI should challenge your thinking, not replace it.**
-:::
 
 The moment you stop questioning AI's output is the moment you become Deloitte.
 
 **Your role:** Editor-in-Chief, not stenographer.
 
+:::
+
+
 ## Part 2: Board of Directors Strategy
 
-## Multi-Perspective Analysis
+![](images/board-of-directors.png)
 
+::: {.notes}
 **The concept:** Get multiple expert viewpoints in one prompt
 
 - CFO perspective (financial)
@@ -75,6 +88,8 @@ The moment you stop questioning AI's output is the moment you become Deloitte.
 - Legal Counsel (compliance)
 
 **Why it works:** Catches blind spots you'd miss thinking alone
+:::
+
 
 ## Demo: Board of Directors Prompt
 
@@ -95,7 +110,6 @@ For each perspective, give me 3-4 key points.
 
 ::: {.notes}
 Switch to browser and run this demo in Gemini.
-:::
 
 ## Your Turn: Try It
 
@@ -108,9 +122,14 @@ Think of a business idea:
 
 **Try the Board of Directors prompt with your idea.**
 
-## Part 3: Devil's Advocate
+:::
 
-## Overcoming Confirmation Bias
+
+## Part 3: Devil's Advocate - Overcoming Confirmation Bias
+
+![](images/devils-advocate.png)
+
+::: {.notes}
 
 **The problem:** We look for evidence that supports our ideas
 
@@ -121,6 +140,7 @@ Think of a business idea:
 - "Be harsh but fair"
 - "Don't hold back"
 - "I need to hear the hard truths"
+:::
 
 ## Demo: Devil's Advocate Prompt
 
@@ -144,9 +164,12 @@ Don't hold back - I need to hear the hard truths.
 Switch to browser and run this demo. Point out how giving AI permission to be critical produces better feedback.
 :::
 
-## Part 4: Reverse Prompting
+## Part 4: Reverse Prompting - When You Don't Know What to Ask
 
-## When You Don't Know What to Ask
+![](images/reverse-prompting.png)
+
+
+::: {.notes}
 
 **The problem:** Sometimes the hardest part is knowing what questions to ask
 
@@ -157,6 +180,7 @@ Switch to browser and run this demo. Point out how giving AI permission to be cr
 - AI understands your specific context
 - Recommendations become tailored, not generic
 - You discover what you don't know
+:::
 
 ## Demo: Reverse Prompting
 
@@ -182,9 +206,11 @@ Start with your first question.
 Run this demo. Answer 2-3 questions from the AI to show how the conversation builds context.
 :::
 
-## Part 5: Ethics & The Trap
+## Part 5: Ethics - The Billboard Rule
 
-## The Billboard Rule
+![](images/billboard-rule.png)
+
+::: {.notes}
 
 **Before sharing anything with AI, ask:**
 
@@ -196,8 +222,13 @@ Run this demo. Answer 2-3 questions from the AI to show how the conversation bui
 - Personal information about others
 - Confidential business data
 - Anything you wouldn't want made public
+:::
 
 ## The Hallucination Trap
+
+![](images/hallucination-trap.png)
+
+::: {.notes}
 
 Remember Deloitte? Here's why it happened:
 
@@ -205,8 +236,14 @@ Remember Deloitte? Here's why it happened:
 2. **Confidence ≠ Accuracy** - AI sounds equally confident right or wrong
 3. **Pattern matching, not truth** - AI predicts likely responses
 
+:::
+
+
 ## The Three Verification Questions
 
+![](images/check.png)
+
+::: {.notes}
 Before trusting any AI output, ask:
 
 1. **Can I find this source independently?**
@@ -215,7 +252,9 @@ Before trusting any AI output, ask:
 
 If you can't verify it, don't use it.
 
-## Resources & Next Steps
+:::
+
+![](images/key-takeaways.png)
 
 ## Key Takeaways
 
@@ -225,9 +264,13 @@ If you can't verify it, don't use it.
 4. Let AI **interview you** for better context (Reverse Prompting)
 5. **Always verify** - never trust blindly
 
-## Companion Website
 
-[QR CODE: Insert QR code linking to companion website]
+## Questions
+
+![](images/questions.png)
+![](images/website.png)
+
+::: {.notes}
 
 **Resources available:**
 
@@ -236,16 +279,5 @@ If you can't verify it, don't use it.
 - Deeper reading on AI concepts
 - Ethics guidelines
 
-## Q&A
-
-**Questions?**
-
----
-
-Dr. Michael Borck  
-Curtin Singapore  
-December 2025
-
-::: {.notes}
 Thank you for your attention. I'm happy to take any questions.
 :::
