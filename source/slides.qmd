@@ -41,7 +41,11 @@ Deloitte is one of the world's largest consulting firms. They have rigorous qual
 4. **Assessment Reality** - If AI can do your assignment...
 5. **Ethics & Next Steps** - One commitment to try
 
-**Companion Website:** [Link provided]
+**Companion Website:** https://michaelborck-presentations.github.io/ai-for-educators/index.html
+
+![](images/agenda-path.png)
+![](images/website.png)
+
 
 ::: {.notes}
 Briefly walk through the agenda. Emphasise that this is a practical session - they'll leave with prompts they can use immediately.
@@ -53,7 +57,7 @@ Mention the companion website early so they know there's a resource for deeper e
 
 ## Part 1: The Real Barrier
 
-![](images/ai-mindset)
+![](images/hiding-person.png)
 
 ::: {.notes}
 Before we talk about how to use AI, let's talk about something that doesn't get discussed enough.
@@ -95,9 +99,9 @@ This creates what I call "underground use" - people using AI without sharing bes
 - Students don't need you less - they need you MORE
 - Your domain expertise is essential for evaluating AI output
 
-::: {.notes}
-This slide addresses the existential fear many educators carry but rarely voice.
+![](images/teacher-superhero.png)
 
+::: {.notes}
 **The historical perspective:**
 
 Think about calculators. When they became widely available, people worried maths teachers would become redundant. What actually happened? Calculators changed WHAT we teach and HOW we teach it. We stopped drilling long division and started focusing on mathematical thinking, problem-solving, and knowing which operations to apply. Maths teachers became MORE important, not less.
@@ -126,7 +130,7 @@ The same pattern repeated with:
 
 ## Part 2: The Core Concept
 
-![](images/smart-intern.png)
+![](images/instructions-recipe.png)
 
 ::: {.notes}
 Here's the key insight I want you to take away from today:
@@ -157,6 +161,10 @@ You don't need to memorise frameworks. Just remember: the clearer you are about 
 
 ## AI is a Smart Intern Who Hallucinates
 
+![](images/eager-intern.png)
+
+::: {.notes}
+
 **Key insight:** AI is a **reasoning engine**, not a search engine
 
 - Google finds information that exists
@@ -167,7 +175,6 @@ You don't need to memorise frameworks. Just remember: the clearer you are about 
 
 > Think of AI like a brilliant intern. They're eager, fast, and can do amazing work. But they might confidently present completely made-up statistics.
 
-::: {.notes}
 This analogy is powerful because it captures both the usefulness and the danger of AI.
 
 **The brilliant intern:**
@@ -198,7 +205,7 @@ When you Google something, you get links to sources that exist. When you ask AI 
 
 ## The Golden Rule
 
-![](images/robot-think.png)
+![](images/thinking-together.png)
 
 ::: {.notes}
 **AI should challenge your thinking, not replace it.**
@@ -520,7 +527,7 @@ This technique is particularly powerful when you're feeling stuck or overwhelmed
 
 ## Part 4: Assessment Reality
 
-![](images/billboard-rule.png)
+![](images/magnifying-glass.png)
 
 ::: {.notes}
 Let's talk about what keeps many educators up at night: assessments.
@@ -563,6 +570,9 @@ Assessments that measure these things are harder for AI to complete - and they'r
 
 ## If AI Can Do Your Assignment...
 
+![](images/three-paths.png)
+
+
 **Three options:**
 
 **Option A: Process Documentation**
@@ -581,6 +591,7 @@ Assessments that measure these things are harder for AI to complete - and they'r
 - Require unique perspective AI can't have
 
 ::: {.notes}
+
 Let me elaborate on each option:
 
 **Option A: Process Documentation**
@@ -711,12 +722,14 @@ These same questions should become habits for your students. Model the behaviour
 
 ## The Billboard Rule
 
-**Before sharing anything with AI, ask:**
-
-> "Would I be comfortable if this appeared on a billboard?"
+![](images/billboard-rule.png)
 
 ::: {.notes}
 **The Billboard Rule:**
+
+**Before sharing anything with AI, ask:**
+
+> "Would I be comfortable if this appeared on a billboard?"
 
 Before you put anything into an AI system, imagine it appearing on a billboard in the middle of campus - or worse, on the front page of a newspaper. If that thought makes you uncomfortable, don't share it with AI.
 
@@ -811,6 +824,8 @@ Before you leave, think about:
 - Try the Board of Directors prompt on something you're planning
 - Run your assessment through AI to see what happens
 
+![](images/small-step.png)
+
 ::: {.notes}
 **The importance of starting small:**
 
@@ -858,6 +873,8 @@ Start small. Scale what works. Share with colleagues.
 
 ![](images/questions.png)
 ![](images/website.png)
+
+https://michaelborck-presentations.github.io/ai-for-educators/index.html
 
 ::: {.notes}
 **Resources available on the companion website:**
