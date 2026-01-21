@@ -1,61 +1,76 @@
-# **Session Title: The AI Boardroom – Leveraging AI for Business Strategy**
-**Target Audience:** Introduction to Business Students (Undergraduate)
-**Time:** 60 Minutes (Online)
+# **Session Title: AI for Educators – Understanding Instructions at the Heart of AI**
+**Target Audience:** Faculty and Teaching Staff
+**Time:** 60 Minutes
 
-## **Part 1: The Mindset (10 Minutes)**
-**Goal:** Shift thinking from "Search Engine" to "Reasoning Engine."
+## **Part 1: The Real Barrier (10 Minutes)**
+**Goal:** Address AI shame and fear directly before diving into techniques.
 
-* **The "Intern" Analogy:** Explain that AI is like a smart, hardworking intern who hallucinates occasionally. It needs clear instructions (Context) and verification (Oversight).
-* **The Golden Rule:** *AI should not replace your thinking; it should challenge your thinking.*
-* **Visual Aid:** 
+* **AI Shame:** 70% of knowledge workers use AI weekly, but 63% fear being seen as incompetent. Most hide their AI use.
+* **The Reframe:** Using AI thoughtfully is a professional skill. Hiding it prevents growth.
+* **Your Expertise Matters MORE:** AI handles routine tasks; YOU provide judgment, connection, inspiration. Students need you MORE, not less.
 
-## **Part 2: The "Board of Directors" Strategy (15 Minutes)**
-**Goal:** Use your "CEO/Board" idea to teach **Multi-Persona Prompting**. This is highly relevant for business students learning about different organisational roles.
+## **Part 2: The Core Concept (7 Minutes)**
+**Goal:** Establish that "instructions" are at the heart of ALL AI.
 
-* **Concept:** instead of asking AI for *one* answer, ask it to simulate *three* conflicting business perspectives.
-* **The Activity (Live Demo):** Pick a simple business idea (e.g., "A coffee shop that doesn't accept cash").
+* **The "Intern" Analogy:** AI is like a brilliant intern who hallucinates occasionally. It needs clear instructions and verification.
+* **The Golden Rule:** *AI should challenge your thinking, not replace it.*
+* **Key Message:** The better your instructions, the better the output. We sometimes call this "prompt engineering" - but it's really just giving clear instructions.
+
+## **Part 3: The "Board of Directors" Strategy (7 Minutes)**
+**Goal:** Use multi-perspective prompting for teaching and planning decisions.
+
+* **Concept:** Instead of asking AI for one answer, ask it to simulate multiple perspectives.
+* **The Activity (Live Demo):** Use an education-relevant example.
 * **The Prompt:**
-    > "Act as a Board of Directors for a new startup. The board consists of:
-    > 1.  **A Skeptical CFO** (Focused on risk and cash flow).
-    > 2.  **An Optimistic Marketing Director** (Focused on virality and brand).
-    > 3.  **An Operations Manager** (Focused on logistics).
-    >
-    > Discuss the pros and cons of opening a 'Cashless-Only' coffee shop in a tourist district. Debate amongst yourselves and provide a final recommendation."
-* **Why this works:** It teaches students that business decisions are multifaceted.
+    > "I'm redesigning my assessment for a second-year management unit.
+    > Act as my advisory board and analyse this from multiple perspectives:
+    > 1. As Learning Designer: Alignment with outcomes?
+    > 2. As Academic Integrity Officer: AI vulnerability?
+    > 3. As Student Advocate: Workload and clarity?
+    > 4. As Industry Partner: Real-world relevance?
+    > For each perspective, give me 3-4 key considerations."
 
-## **Part 3: The Devil’s Advocate (10 Minutes)**
-**Goal:** Use the **Debate/Pros-Cons** strategy to reduce confirmation bias.
+## **Part 4: The Devil's Advocate (6 Minutes)**
+**Goal:** Use the debate/critique strategy to stress-test positions.
 
-* **Concept:** Students often fall in love with their first business idea. Use AI to tear it apart.
+* **Concept:** Educators often have strong positions. Use AI to find the weaknesses.
 * **The Prompt:**
-    > "I believe that [Insert Business Strategy] is the best course of action. Act as a ruthless competitor or a critical investor. 'Steelman' the argument *against* my strategy. Tell me exactly why this might fail."
-* **Lesson:** This teaches resilience and critical analysis, not just text generation.
+    > "I believe that banning AI from assessments is the best approach for maintaining academic integrity. Play devil's advocate. Be harsh but fair. Tell me exactly why this might fail."
+* **Lesson:** This teaches stress-testing thinking, not just text generation.
 
-## **Part 4: Reverse Prompting (10 Minutes)**
-**Goal:** Use the **Tutor/Consultant** approach to clarify problem definitions.
+## **Part 5: Reverse Prompting (7 Minutes)**
+**Goal:** Let AI interview YOU for tailored recommendations.
 
-* **Concept:** Sometimes we don't know what to ask. Let the AI interview *us*.
+* **Concept:** Sometimes we don't know what to ask. Let the AI interview us.
 * **The Prompt:**
-    > "I want to create a marketing plan for a sustainable fashion brand, but I don't know where to start. Ask me 5 specific questions about my business, one by one. Once I answer them, generate a tailored marketing strategy for me."
-* **Lesson:** The quality of the output depends on the quality of the input (Garbage In, Garbage Out).
+    > "I want to create a policy for AI use in my units. Before giving me any advice, interview me first. Ask me questions one at a time about my teaching context, concerns, and goals. Then give me tailored recommendations."
+* **Lesson:** Generic prompts get generic answers. Context produces actionable insights.
 
-## **Part 5: Ethics & The "Trap" (10 Minutes)**
-**Goal:** A "light" touch on ethics focused on **Data Privacy** and **Hallucination**.
+## **Part 6: Assessment Reality (10 Minutes)**
+**Goal:** Address the elephant in the room - AI and assessments.
 
-* **The Privacy Rule:** "If you wouldn't put it on a billboard, don't put it in a public LLM." (Mention Samsung/Apple internal data leaks as examples).
-* **The Bias Trap:** Briefly mention that AI is trained on historical internet data, which contains historical business biases (e.g., expecting CEOs to be male).
-* **The "Fact Check" Challenge:** Remind them that AI is a language model, not a knowledge model. It sounds confident even when it is wrong.
+* **The Stress-Test:** Run your assessment through AI. If it passes, the assessment was already breakable.
+* **Three Options:**
+  - **Process Documentation:** AI transcript + annotations + reflection
+  - **In-Class Components:** AI draft before class, in-class critique
+  - **Personal Application:** Local context, primary data, unique perspective
+* **Key Message:** AI doesn't break assessments; it reveals what was already breakable.
 
-## **Part 6: Q&A and Wrap Up (5 Minutes)**
+## **Part 7: Ethics & Next Steps (8 Minutes)**
+**Goal:** Ethics, verification, and commitment to action.
+
+* **The Billboard Rule:** "If you wouldn't put it on a billboard, don't put it in AI."
+* **Three Verification Questions:** Can I find this independently? Does it appear elsewhere? Does it make logical sense?
+* **One Commitment:** What small experiment will you try this week?
+
+## **Part 8: Q&A and Wrap Up (5 Minutes)**
 
 ---
 
-## **Resources to "Dig Deeper"**
+## **Resources on Companion Website**
 
-Since you want them to explore further, provide a simplified "One-Pager" PDF or a slide with these links:
-
-1.  **Prompting Framework:** **The CREATE Framework** (Context, Role, Explicit Instruction, Audience, Tone, Execute) – A simple acronym for business students to remember See: https://medium.com/aimonks/chatgpt-power-prompts-cheatsheet-c-r-e-a-t-e-framework-for-prompting-b852b2b9b248.
-2.  **Reading:** **"One Useful Thing" by Ethan Mollick.** (https://www.oneusefulthing.org/) Highly recommended for business students. His articles on AI as a "co-intelligence" are very accessible.
-3.  **Tool:** **Microsoft WorkLab.** (https://www.microsoft.com/en-us/worklab/) Good for corporate examples of how AI is actually being used in the Fortune 500.
-4.  **Video:**  (Search for a curated TED talk on AI in Business decision making).
-
+1. **Educator Handout:** All prompts ready to copy and use
+2. **Diagnostic Quiz:** Personalised learning path recommendations
+3. **Deep-Dive Guides:** What is AI, What are LLMs, CRAFT Framework, Seven Techniques
+4. **Style Mirror Tool:** Help AI write in your voice
+5. **Deloitte Case Study:** Full details on the hallucination incidents

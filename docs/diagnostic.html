@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Literacy Diagnostic | AI for Educators</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: linear-gradient(135deg, #1a365d 0%, #2c5282 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .top-nav {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            z-index: 100;
+        }
+
+        .top-nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 14px;
+            opacity: 0.9;
+            transition: opacity 0.3s;
+        }
+
+        .top-nav a:hover {
+            opacity: 1;
+        }
+
+        .container {
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            max-width: 650px;
+            width: 100%;
+            padding: 40px;
+            margin-top: 40px;
+        }
+
+        .header {
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        .header h1 {
+            color: #1a365d;
+            font-size: 26px;
+            margin-bottom: 10px;
+        }
+
+        .header p {
+            color: #4a5568;
+            font-size: 15px;
+            line-height: 1.5;
+        }
+
+        .progress-container {
+            margin-bottom: 25px;
+        }
+
+        .progress-text {
+            text-align: center;
+            color: #3182ce;
+            font-size: 14px;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+
+        .progress-bar {
+            width: 100%;
+            height: 6px;
+            background: #e2e8f0;
+            border-radius: 3px;
+            overflow: hidden;
+        }
+
+        .progress-fill {
+            height: 100%;
+            background: linear-gradient(90deg, #3182ce 0%, #2c5282 100%);
+            width: 0%;
+            transition: width 0.3s ease;
+        }
+
+        .question-container {
+            display: none;
+            animation: fadeIn 0.3s ease forwards;
+        }
+
+        .question-container.active {
+            display: block;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .question-text {
+            color: #2d3748;
+            font-size: 16px;
+            font-weight: 500;
+            margin-bottom: 20px;
+            line-height: 1.6;
+        }
+
+        .options {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .option {
+            display: flex;
+            align-items: center;
+        }
+
+        .option input[type="radio"] {
+            width: 20px;
+            height: 20px;
+            margin-right: 12px;
+            cursor: pointer;
+            accent-color: #3182ce;
+        }
+
+        .option label {
+            flex: 1;
+            cursor: pointer;
+            color: #4a5568;
+            font-size: 15px;
+            padding: 12px;
+            border-radius: 6px;
+            transition: background-color 0.2s;
+            border: 1px solid #e2e8f0;
+        }
+
+        .option:hover label {
+            background-color: #f7fafc;
+        }
+
+        .option input[type="radio"]:checked + label {
+            background-color: #ebf8ff;
+            color: #2c5282;
+            font-weight: 500;
+            border-color: #3182ce;
+        }
+
+        .nav-buttons {
+            display: flex;
+            gap: 12px;
+            margin-top: 30px;
+            justify-content: space-between;
+        }
+
+        button {
+            padding: 12px 24px;
+            border: none;
+            border-radius: 6px;
+            font-size: 14px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .btn-prev {
+            background: #e2e8f0;
+            color: #2d3748;
+        }
+
+        .btn-prev:hover:not(:disabled) {
+            background: #cbd5e0;
+        }
+
+        .btn-next {
+            background: linear-gradient(135deg, #3182ce 0%, #2c5282 100%);
+            color: white;
+        }
+
+        .btn-next:hover:not(:disabled) {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(49, 130, 206, 0.4);
+        }
+
+        button:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+        }
+
+        /* Results Page */
+        .results-page {
+            display: none;
+        }
+
+        .results-page.active {
+            display: block;
+        }
+
+        .results-header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .results-header h2 {
+            color: #1a365d;
+            font-size: 28px;
+            margin-bottom: 10px;
+        }
+
+        .profile-section {
+            background: #f7fafc;
+            padding: 24px;
+            border-radius: 12px;
+            margin-bottom: 25px;
+            border-left: 4px solid #3182ce;
+        }
+
+        .profile-title {
+            color: #2c5282;
+            font-size: 20px;
+            font-weight: 600;
+            margin-bottom: 12px;
+        }
+
+        .profile-description {
+            color: #4a5568;
+            font-size: 15px;
+            line-height: 1.7;
+        }
+
+        .recommendations {
+            background: #ebf8ff;
+            padding: 20px;
+            border-radius: 12px;
+            margin-bottom: 20px;
+            border-left: 4px solid #3182ce;
+        }
+
+        .recommendations h3 {
+            color: #2c5282;
+            font-size: 16px;
+            font-weight: 600;
+            margin-bottom: 15px;
+        }
+
+        .recommendation-item {
+            margin-bottom: 12px;
+            color: #4a5568;
+            font-size: 14px;
+            line-height: 1.6;
+        }
+
+        .recommendation-item a {
+            color: #2c5282;
+            text-decoration: none;
+            font-weight: 500;
+            border-bottom: 2px solid #3182ce;
+        }
+
+        .recommendation-item a:hover {
+            color: #1a365d;
+        }
+
+        .results-actions {
+            display: flex;
+            gap: 12px;
+            margin-top: 25px;
+        }
+
+        .btn-action {
+            flex: 1;
+            padding: 14px 20px;
+            background: linear-gradient(135deg, #3182ce 0%, #2c5282 100%);
+            color: white;
+            border: none;
+            border-radius: 6px;
+            font-size: 14px;
+            font-weight: 600;
+            cursor: pointer;
+            text-decoration: none;
+            text-align: center;
+            transition: all 0.2s;
+        }
+
+        .btn-action:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(49, 130, 206, 0.4);
+        }
+
+        .btn-action.secondary {
+            background: white;
+            color: #3182ce;
+            border: 2px solid #3182ce;
+        }
+
+        .btn-action.secondary:hover {
+            background: #ebf8ff;
+        }
+
+        .note {
+            font-size: 13px;
+            color: #718096;
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        @media (max-width: 600px) {
+            .top-nav {
+                position: relative;
+                margin-bottom: 20px;
+            }
+
+            .container {
+                margin-top: 0;
+                padding: 24px;
+            }
+
+            .header h1 {
+                font-size: 22px;
+            }
+
+            .nav-buttons,
+            .results-actions {
+                flex-direction: column;
+            }
+
+            button, .btn-action {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="top-nav">
+        <a href="index.html">← Back to Home</a>
+    </div>
+
+    <div class="container">
+        <div class="header">
+            <h1>Find Your Learning Path</h1>
+            <p>Answer 6 quick questions to get personalised recommendations for where to start with AI in your teaching.</p>
+        </div>
+
+        <div class="progress-container">
+            <div class="progress-text" id="progressText">Question 1 of 6</div>
+            <div class="progress-bar">
+                <div class="progress-fill" id="progressFill"></div>
+            </div>
+        </div>
+
+        <form id="quizForm">
+            <!-- Q1: Experience -->
+            <div class="question-container active" id="q1">
+                <div class="question-text">1. How would you describe your experience with AI tools like ChatGPT, Gemini, or Claude?</div>
+                <div class="options">
+                    <div class="option">
+                        <input type="radio" name="q1" value="0" id="q1a">
+                        <label for="q1a">I haven't really used them yet</label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" name="q1" value="1" id="q1b">
+                        <label for="q1b">I've tried them a few times, but not regularly</label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" name="q1" value="2" id="q1c">
+                        <label for="q1c">I use them occasionally for work or personal tasks</label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" name="q1" value="3" id="q1d">
+                        <label for="q1d">I use them regularly and have developed my own approaches</label>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Q2: Understanding -->
+            <div class="question-container" id="q2">
+                <div class="question-text">2. What does "AI hallucination" mean?</div>
+                <div class="options">
+                    <div class="option">
+                        <input type="radio" name="q2" value="0" id="q2a">
+                        <label for="q2a">I'm not sure</label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" name="q2" value="1" id="q2b">
+                        <label for="q2b">When AI makes mistakes</label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" name="q2" value="2" id="q2c">
+                        <label for="q2c">When AI confidently generates false information</label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" name="q2" value="3" id="q2d">
+                        <label for="q2d">When AI generates plausible-sounding but fabricated content, often with fake sources</label>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Q3: Prompting -->
+            <div class="question-container" id="q3">
+                <div class="question-text">3. When using AI, how do you typically write your requests (prompts)?</div>
+                <div class="options">
+                    <div class="option">
+                        <input type="radio" name="q3" value="0" id="q3a">
+                        <label for="q3a">I write whatever comes to mind</label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" name="q3" value="1" id="q3b">
+                        <label for="q3b">I try to be specific but I'm not sure what makes a good prompt</label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" name="q3" value="2" id="q3c">
+                        <label for="q3c">I include context, specify format, and iterate if needed</label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" name="q3" value="3" id="q3d">
+                        <label for="q3d">I use structured frameworks and techniques like role-playing or chain-of-thought</label>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Q4: Concerns -->
+            <div class="question-container" id="q4">
+                <div class="question-text">4. What's your biggest concern about AI in education?</div>
+                <div class="options">
+                    <div class="option">
+                        <input type="radio" name="q4" value="integrity" id="q4a">
+                        <label for="q4a">Academic integrity - students using AI to cheat</label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" name="q4" value="relevance" id="q4b">
+                        <label for="q4b">My teaching becoming less relevant</label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" name="q4" value="learning" id="q4c">
+                        <label for="q4c">Students not actually learning if AI does the work</label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" name="q4" value="time" id="q4d">
+                        <label for="q4d">Not having time to learn all of this</label>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Q5: Teaching use -->
+            <div class="question-container" id="q5">
+                <div class="question-text">5. Have you used AI to help with any teaching tasks?</div>
+                <div class="options">
+                    <div class="option">
+                        <input type="radio" name="q5" value="0" id="q5a">
+                        <label for="q5a">No, not yet</label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" name="q5" value="1" id="q5b">
+                        <label for="q5b">I've tried it for simple things like drafting emails</label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" name="q5" value="2" id="q5c">
+                        <label for="q5c">Yes, for content like discussion questions or explanations</label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" name="q5" value="3" id="q5d">
+                        <label for="q5d">Yes, regularly for feedback, content creation, or assessment design</label>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Q6: Goal -->
+            <div class="question-container" id="q6">
+                <div class="question-text">6. What would you most like to achieve from learning about AI?</div>
+                <div class="options">
+                    <div class="option">
+                        <input type="radio" name="q6" value="understand" id="q6a">
+                        <label for="q6a">Understand what AI can and can't do</label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" name="q6" value="practical" id="q6b">
+                        <label for="q6b">Get practical techniques I can use immediately</label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" name="q6" value="assessment" id="q6c">
+                        <label for="q6c">Figure out how to handle AI in assessments</label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" name="q6" value="strategy" id="q6d">
+                        <label for="q6d">Develop a strategic approach for my teaching</label>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Results -->
+            <div class="results-page" id="results">
+                <div class="results-header">
+                    <h2>Your Personalised Path</h2>
+                </div>
+
+                <div class="profile-section">
+                    <div class="profile-title" id="profileTitle"></div>
+                    <div class="profile-description" id="profileDescription"></div>
+                </div>
+
+                <div class="recommendations">
+                    <h3>Recommended Starting Points</h3>
+                    <div id="recommendationsList"></div>
+                </div>
+
+                <div class="recommendations" style="background: #fffbeb; border-left-color: #f59e0b;">
+                    <h3 style="color: #b45309;">Based on Your Concern</h3>
+                    <div id="concernAdvice"></div>
+                </div>
+
+                <div class="results-actions">
+                    <a href="index.html" class="btn-action">Explore Resources</a>
+                    <button type="button" class="btn-action secondary" onclick="restartQuiz()">Retake Quiz</button>
+                </div>
+
+                <p class="note">Your results are not stored. Retake anytime to update your recommendations.</p>
+            </div>
+
+            <div class="nav-buttons" id="navButtons">
+                <button type="button" class="btn-prev" id="prevBtn" onclick="previousQuestion()" style="visibility: hidden;">← Previous</button>
+                <button type="button" class="btn-next" id="nextBtn" onclick="nextQuestion()">Next →</button>
+            </div>
+        </form>
+    </div>
+
+    <script>
+        let currentQuestion = 1;
+        const totalQuestions = 6;
+
+        function showQuestion(num) {
+            // Hide all questions
+            document.querySelectorAll('.question-container').forEach(q => q.classList.remove('active'));
+            document.getElementById('results').classList.remove('active');
+
+            // Show current question
+            document.getElementById('q' + num).classList.add('active');
+
+            // Update progress
+            const progress = (num / totalQuestions) * 100;
+            document.getElementById('progressFill').style.width = progress + '%';
+            document.getElementById('progressText').textContent = `Question ${num} of ${totalQuestions}`;
+
+            // Update buttons
+            document.getElementById('prevBtn').style.visibility = num === 1 ? 'hidden' : 'visible';
+            document.getElementById('nextBtn').textContent = num === totalQuestions ? 'See Results' : 'Next →';
+
+            currentQuestion = num;
+        }
+
+        function nextQuestion() {
+            // Check if answered
+            const answered = document.querySelector(`input[name="q${currentQuestion}"]:checked`);
+            if (!answered) {
+                alert('Please select an answer to continue.');
+                return;
+            }
+
+            if (currentQuestion === totalQuestions) {
+                showResults();
+            } else {
+                showQuestion(currentQuestion + 1);
+            }
+        }
+
+        function previousQuestion() {
+            if (currentQuestion > 1) {
+                showQuestion(currentQuestion - 1);
+            }
+        }
+
+        function showResults() {
+            // Hide questions and nav
+            document.querySelectorAll('.question-container').forEach(q => q.classList.remove('active'));
+            document.getElementById('navButtons').style.display = 'none';
+            document.querySelector('.progress-container').style.display = 'none';
+
+            // Calculate scores
+            let experienceScore = 0;
+            for (let i = 1; i <= 3; i++) {
+                const answer = document.querySelector(`input[name="q${i}"]:checked`);
+                if (answer) experienceScore += parseInt(answer.value);
+            }
+            for (let i = 5; i <= 5; i++) {
+                const answer = document.querySelector(`input[name="q${i}"]:checked`);
+                if (answer) experienceScore += parseInt(answer.value);
+            }
+
+            // Determine profile
+            let profile, description, recommendations;
+
+            if (experienceScore <= 4) {
+                profile = "Getting Started";
+                description = "You're at the beginning of your AI journey - and that's perfectly fine. Many educators are in the same place. The key is starting with foundational understanding before diving into techniques.";
+                recommendations = [
+                    { text: "What is AI?", link: "content/what-is-ai.html", note: "Start here - understand what AI actually is" },
+                    { text: "What are LLMs?", link: "content/what-are-llms.html", note: "Learn how tools like ChatGPT work" },
+                    { text: "Educator Handout", link: "handout.html", note: "Simple prompts to try first" }
+                ];
+            } else if (experienceScore <= 8) {
+                profile = "Building Skills";
+                description = "You have some experience and understand the basics. Now it's time to develop systematic approaches and build confidence in your prompting skills.";
+                recommendations = [
+                    { text: "CRAFT Prompting Framework", link: "content/craft-prompting-framework.html", note: "Structure your prompts for better results" },
+                    { text: "Educator Handout", link: "handout.html", note: "Practical prompts for teaching tasks" },
+                    { text: "Seven Prompting Techniques", link: "content/seven-techniques.html", note: "Expand your toolkit" }
+                ];
+            } else {
+                profile = "Ready to Advance";
+                description = "You have solid experience with AI tools. Focus on strategic integration, teaching others, and refining your approaches for maximum impact.";
+                recommendations = [
+                    { text: "AI Critique Toolkit", link: "content/critique-toolkit.html", note: "Strengthen your evaluation skills" },
+                    { text: "Seven Prompting Techniques", link: "content/seven-techniques.html", note: "Master advanced techniques" },
+                    { text: "Ethics & Integrity", link: "content/ethics-integrity.html", note: "Lead on responsible AI use" }
+                ];
+            }
+
+            // Get concern
+            const concern = document.querySelector('input[name="q4"]:checked').value;
+            let concernAdvice = "";
+
+            switch(concern) {
+                case 'integrity':
+                    concernAdvice = "<strong>On academic integrity:</strong> Rather than trying to detect AI use, consider redesigning assessments to make student thinking visible. The <a href='handout.html#assessment-stress-test'>Assessment Stress-Test</a> prompt helps you identify vulnerabilities. Remember: AI doesn't break assessments; it reveals what was already breakable.";
+                    break;
+                case 'relevance':
+                    concernAdvice = "<strong>On your relevance:</strong> Your expertise matters MORE, not less. AI handles routine tasks; you provide judgment, connection, and inspiration. Students need guidance on WHEN and HOW to use AI wisely - that's your unique value.";
+                    break;
+                case 'learning':
+                    concernAdvice = "<strong>On student learning:</strong> This is a valid concern. The key is designing tasks where AI assists rather than replaces thinking. Process documentation, in-class components, and personal application all keep students engaged. See the <a href='content/ethics-integrity.html'>Ethics & Integrity</a> guide.";
+                    break;
+                case 'time':
+                    concernAdvice = "<strong>On time constraints:</strong> Start small - one prompt, one task. The <a href='handout.html'>Educator Handout</a> has copy-paste prompts ready to use. Even 5 minutes of experimentation builds confidence. You don't need to master everything at once.";
+                    break;
+            }
+
+            // Update display
+            document.getElementById('profileTitle').textContent = profile;
+            document.getElementById('profileDescription').textContent = description;
+
+            let recHTML = '';
+            recommendations.forEach(rec => {
+                recHTML += `<div class="recommendation-item">→ <a href="${rec.link}">${rec.text}</a> - ${rec.note}</div>`;
+            });
+            document.getElementById('recommendationsList').innerHTML = recHTML;
+            document.getElementById('concernAdvice').innerHTML = `<div class="recommendation-item">${concernAdvice}</div>`;
+
+            // Show results
+            document.getElementById('results').classList.add('active');
+        }
+
+        function restartQuiz() {
+            // Clear selections
+            document.querySelectorAll('input[type="radio"]').forEach(input => input.checked = false);
+
+            // Show first question
+            document.getElementById('navButtons').style.display = 'flex';
+            document.querySelector('.progress-container').style.display = 'block';
+            document.getElementById('results').classList.remove('active');
+            showQuestion(1);
+        }
+
+        // Initialize
+        showQuestion(1);
+    </script>
+</body>
+</html>

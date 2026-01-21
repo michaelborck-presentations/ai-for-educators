@@ -1,8 +1,8 @@
 ---
-title: "AI Boardroom"
-subtitle: "Leveraging AI for Business Strategy"
+title: "AI for Educators"
+subtitle: "Understanding Instructions at the Heart of AI"
 author: "Dr. Michael Borck"
-date: "9 December 2025"
+date: "2026"
 format: pptx
 ---
 
@@ -24,29 +24,78 @@ Pause for 2-3 seconds before speaking.
 
 **The lesson:** AI is confident even when wrong. Verification is essential.
 
-"Their reputation—built over decades—damaged by AI-generated misinformation they didn't verify. Today, I'm going to teach you how to use AI as a strategic thinking partner - and how to avoid becoming the next headline."
+**Why this matters for us:** Your students will encounter this. Some already are. Today, I'm going to show you how to think about AI - and how to teach others to use it wisely.
 :::
 
 ## Today's Session
 
-1. **The AI Mindset** - How to think about AI
-2. **Board of Directors Strategy** - Multi-perspective analysis
-3. **Devil's Advocate** - Stress-testing ideas
-4. **Reverse Prompting** - Let AI interview you
-5. **Ethics & The Trap** - Using AI responsibly
+1. **The Real Barrier** - Why we hesitate (and why that's normal)
+2. **The Core Concept** - Instructions are at the heart of ALL AI
+3. **Three Techniques** - Practical tools you can use and teach
+4. **Assessment Reality** - If AI can do your assignment...
+5. **Ethics & Next Steps** - One commitment to try
 
-**Companion Website:** [Link in chat]
+**Companion Website:** [Link provided]
 
-## Part 1: The AI Mindset
+## Part 1: The Real Barrier
 
 ![](images/ai-mindset)
 
+::: {.notes}
+Before we talk about how to use AI, let's talk about something that doesn't get discussed enough.
 
-## AI is a Smart Intern Who Hallucinates
+**The elephant in the room.**
+:::
+
+## AI Shame - The Hidden Barrier
+
+**The statistics:**
+
+- 70% of knowledge workers use AI weekly
+- 63% fear being seen as incompetent or lazy
+- Most hide their AI use from colleagues
+
+**Sound familiar?**
+
+::: {.notes}
+This creates "underground use" - people using AI without sharing best practices, without developing skills openly, without learning from each other.
+
+**The reframe:** Using AI thoughtfully is a professional skill. Hiding it prevents growth.
+:::
+
+## Your Expertise Matters MORE, Not Less
+
+**The fear:** "Will AI make me redundant?"
+
+**The reality:**
+
+- AI handles routine tasks
+- YOU provide judgment, connection, inspiration
+- Students don't need you less - they need you MORE
+- Your domain expertise is essential for evaluating AI output
+
+::: {.notes}
+Think about calculators. Did they make maths teachers redundant? No - they changed WHAT we teach and HOW.
+
+Same with AI. Your expertise in pedagogy, in your discipline, in understanding your students - that becomes MORE valuable, not less.
+:::
+
+## Part 2: The Core Concept
 
 ![](images/smart-intern.png)
 
 ::: {.notes}
+Here's the key insight I want you to take away:
+
+**At the heart of ALL AI are instructions.**
+
+We sometimes call this "prompt engineering" or "context engineering" - but really, it's just giving clear instructions.
+
+The better your instructions, the better the output.
+:::
+
+## AI is a Smart Intern Who Hallucinates
+
 **Key insight:** AI is a **reasoning engine**, not a search engine
 
 - Google finds information that exists
@@ -56,10 +105,6 @@ Pause for 2-3 seconds before speaking.
 **The Intern Analogy:**
 
 > Think of AI like a brilliant intern. They're eager, fast, and can do amazing work. But they might confidently present completely made-up statistics.
-
-:::
-
-
 
 ## The Golden Rule
 
@@ -71,15 +116,16 @@ Pause for 2-3 seconds before speaking.
 The moment you stop questioning AI's output is the moment you become Deloitte.
 
 **Your role:** Editor-in-Chief, not stenographer.
-
 :::
 
 
-## Part 2: Board of Directors Strategy
+## Part 3: Three Techniques
 
 ![](images/board-of-directors.png)
 
 ::: {.notes}
+Now let's look at three practical techniques. These work for YOUR work AND you can teach them to students.
+
 **The concept:** Get multiple expert viewpoints in one prompt
 
 - CFO perspective (financial)
@@ -94,38 +140,38 @@ The moment you stop questioning AI's output is the moment you become Deloitte.
 ## Demo: Board of Directors Prompt
 
 ```
-I'm considering opening a cashless coffee shop 
-near a university campus. 
+I'm redesigning my assessment for a second-year
+management unit.
 
-Act as my board of directors and analyse this 
-idea from multiple perspectives:
+Act as my advisory board and analyse this from
+multiple perspectives:
 
-1. As CFO: Financial considerations, risks, ROI?
-2. As Marketing Director: Positioning and reach?
-3. As Operations Manager: Practical challenges?
-4. As Legal Counsel: Regulations to consider?
+1. As Learning Designer: Alignment with outcomes?
+2. As Academic Integrity Officer: AI vulnerability?
+3. As Student Advocate: Workload and clarity?
+4. As Industry Partner: Real-world relevance?
 
-For each perspective, give me 3-4 key points.
+For each perspective, give me 3-4 key considerations.
 ```
 
 ::: {.notes}
-Switch to browser and run this demo in Gemini.
+Switch to browser and run this demo in Gemini or Claude.
 
 ## Your Turn: Try It
 
-Think of a business idea:
+Think about something you're working on:
 
-- A meal prep delivery service for students
-- A tutoring app connecting students with graduates  
-- A sustainable fashion rental service
-- Your own idea
+- Redesigning an assessment
+- Planning a new unit or module
+- Developing a policy or guideline
+- Preparing for a difficult conversation
 
-**Try the Board of Directors prompt with your idea.**
+**Try the Board of Directors prompt with your situation.**
 
 :::
 
 
-## Part 3: Devil's Advocate - Overcoming Confirmation Bias
+## Devil's Advocate - Overcoming Confirmation Bias
 
 ![](images/devils-advocate.png)
 
@@ -145,26 +191,28 @@ Think of a business idea:
 ## Demo: Devil's Advocate Prompt
 
 ```
-I believe that a cashless coffee shop near 
-a university is a great business idea.
+I believe that banning AI from assessments is
+the best approach for maintaining academic integrity.
 
-Play devil's advocate. Give me the strongest 
-possible arguments against this idea. 
+Play devil's advocate. Give me the strongest
+possible arguments against this position.
 Be harsh but fair. I want to know:
 
-1. Why might this fail?
+1. Why might this approach fail?
 2. What am I probably not thinking about?
 3. Who would this NOT work for?
-4. What market conditions could kill this?
+4. What unintended consequences could occur?
 
 Don't hold back - I need to hear the hard truths.
 ```
 
 ::: {.notes}
 Switch to browser and run this demo. Point out how giving AI permission to be critical produces better feedback.
+
+You can use this for ANY position you hold - it's about stress-testing your thinking.
 :::
 
-## Part 4: Reverse Prompting - When You Don't Know What to Ask
+## Reverse Prompting - When You Don't Know What to Ask
 
 ![](images/reverse-prompting.png)
 
@@ -175,7 +223,7 @@ Switch to browser and run this demo. Point out how giving AI permission to be cr
 
 **The solution:** Let AI interview YOU first
 
-**Why it works:** 
+**Why it works:**
 
 - AI understands your specific context
 - Recommendations become tailored, not generic
@@ -185,46 +233,63 @@ Switch to browser and run this demo. Point out how giving AI permission to be cr
 ## Demo: Reverse Prompting
 
 ```
-I want to create a marketing plan for a new 
-cashless coffee shop near a university.
+I want to create a policy for AI use in my
+business management units.
 
-Before giving me any advice, interview me first. 
+Before giving me any advice, interview me first.
 Ask me questions one at a time to understand:
-- My target customers
-- My budget and timeline
-- My competitive advantages
-- My experience in this industry
+- My teaching context and student level
+- My current assessment types
+- My concerns about AI use
+- My goals for student learning
 - Any constraints I'm working with
 
-After you understand my situation, then give 
-me tailored marketing recommendations.
+After you understand my situation, then give
+me tailored recommendations.
 
 Start with your first question.
 ```
 
 ::: {.notes}
 Run this demo. Answer 2-3 questions from the AI to show how the conversation builds context.
+
+This is particularly powerful when you're unsure where to start.
 :::
 
-## Part 5: Ethics - The Billboard Rule
+## Part 4: Assessment Reality
 
 ![](images/billboard-rule.png)
 
 ::: {.notes}
+Let's talk about the elephant in the room for educators: assessments.
 
-**Before sharing anything with AI, ask:**
+Here's a simple test: **Run your assessment through AI.**
 
-> "Would I be comfortable if this appeared on a billboard?"
+If AI can complete it independently and get a pass, the assessment reveals what was already breakable.
 
-**Never share:**
-
-- Passwords or API keys
-- Personal information about others
-- Confidential business data
-- Anything you wouldn't want made public
+**This isn't about banning AI. It's about designing better assessments.**
 :::
 
-## The Hallucination Trap
+## If AI Can Do Your Assignment...
+
+**Three options:**
+
+**Option A: Process Documentation**
+- Submit AI conversation transcript
+- Annotate where AI was wrong/limited
+- Reflection on how expertise improved output
+
+**Option B: In-Class Components**
+- AI-generated draft submitted before class
+- In-class critique and improvement
+- Live presentation of key insights
+
+**Option C: Personal Application**
+- Connect to specific local context
+- Include primary data they collected
+- Require unique perspective AI can't have
+
+## Part 5: Ethics & Next Steps
 
 ![](images/hallucination-trap.png)
 
@@ -252,18 +317,51 @@ Before trusting any AI output, ask:
 
 If you can't verify it, don't use it.
 
+Teach your students these same questions.
+:::
+
+## The Billboard Rule
+
+**Before sharing anything with AI, ask:**
+
+> "Would I be comfortable if this appeared on a billboard?"
+
+**Never share:**
+
+- Student data or personal information
+- Confidential institutional data
+- Anything you wouldn't want made public
+
+::: {.notes}
+This applies to us AND to our students. Model the behaviour you want to see.
 :::
 
 ![](images/key-takeaways.png)
 
 ## Key Takeaways
 
-1. AI is a thinking partner, not a replacement for thinking
-2. Use **multi-perspective prompting** (Board of Directors)
-3. **Challenge your ideas** (Devil's Advocate)
-4. Let AI **interview you** for better context (Reverse Prompting)
-5. **Always verify** - never trust blindly
+1. **AI shame is real** - normalize thoughtful use
+2. **Instructions are everything** - clarity drives quality
+3. Use **multi-perspective prompting** (Board of Directors)
+4. **Challenge your ideas** (Devil's Advocate)
+5. Let AI **interview you** for better context (Reverse Prompting)
+6. **Always verify** - never trust blindly
 
+## Your One Commitment
+
+Before you leave, think about:
+
+**One small experiment you'll try this week.**
+
+- Use AI to draft feedback on student work (then edit it)
+- Try the Board of Directors prompt on something you're planning
+- Run your assessment through AI to see what happens
+
+::: {.notes}
+Start small. Scale what works. Share with colleagues.
+
+The goal isn't to become an AI expert overnight. It's to develop judgment about when and how to use these tools.
+:::
 
 ## Questions
 
@@ -272,12 +370,13 @@ If you can't verify it, don't use it.
 
 ::: {.notes}
 
-**Resources available:**
+**Resources available on the companion website:**
 
 - All prompts from today's session
-- Style Mirror tool (help AI write in your voice)
 - Deeper reading on AI concepts
-- Ethics guidelines
+- Interactive diagnostic for personalised learning paths
+- Ethics and integrity guidelines
+- Style Mirror tool (help AI write in your voice)
 
 Thank you for your attention. I'm happy to take any questions.
 :::

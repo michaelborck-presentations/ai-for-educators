@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AI Boardroom - Student Handout</title>
+    <title>AI for Educators - Handout</title>
     <style>
         :root {
             --primary: #1a365d;
@@ -15,6 +15,7 @@
             --border: #e2e8f0;
             --white: #ffffff;
             --success: #38a169;
+            --purple: #667eea;
         }
 
         * {
@@ -188,6 +189,19 @@
             margin-bottom: 0.5rem;
         }
 
+        .info-box {
+            background: #f0f5ff;
+            border: 1px solid var(--purple);
+            border-radius: 6px;
+            padding: 1rem;
+            margin: 1rem 0;
+        }
+
+        .info-box h4 {
+            color: var(--purple);
+            margin-bottom: 0.5rem;
+        }
+
         .checklist {
             list-style: none;
             padding-left: 0;
@@ -222,88 +236,94 @@
 </head>
 <body>
     <header>
-        <h1>AI Boardroom: Student Handout</h1>
-        <p>Prompts and Techniques for Strategic AI Use</p>
-        <p><strong>MGMT1003</strong> | Dr. Michael Borck | 9 December 2025</p>
+        <h1>AI for Educators: Handout</h1>
+        <p>Prompts and Techniques for Thoughtful AI Use</p>
+        <p><strong>Faculty Development</strong> | Dr. Michael Borck | 2026</p>
         <button class="print-btn no-print" onclick="window.print()">Print / Save as PDF</button>
     </header>
 
     <div class="warning-box">
         <h4>The Billboard Rule</h4>
-        <p>Before sharing anything with AI, ask: "Would I be comfortable if this appeared on a billboard?" Never share passwords, personal data about others, or confidential information. Always verify AI outputs - remember Deloitte's $440,000 mistake.</p>
+        <p>Before sharing anything with AI, ask: "Would I be comfortable if this appeared on a billboard?" Never share student data, personal information about others, or confidential institutional data. Always verify AI outputs - remember Deloitte's $440,000 mistake.</p>
+    </div>
+
+    <div class="info-box">
+        <h4>The Core Insight</h4>
+        <p>At the heart of ALL AI are <strong>instructions</strong>. The clearer your instructions, the better the output. This is sometimes called "prompt engineering" or "context engineering" - but really, it's just giving clear, specific instructions.</p>
     </div>
 
     <div class="section">
         <h2 data-num="1">Board of Directors Strategy</h2>
-        <p class="section-intro">Get multiple expert perspectives on a business decision in one prompt. Replace [YOUR BUSINESS IDEA] with your actual idea.</p>
-        
+        <p class="section-intro">Get multiple expert perspectives on a decision or plan in one prompt. Replace [YOUR SITUATION] with your actual context.</p>
+
         <div class="prompt-box">
             <h3>Multi-Perspective Analysis</h3>
             <button class="copy-btn no-print" onclick="copyPrompt(this)">Copy</button>
-            <pre>I'm considering [YOUR BUSINESS IDEA]. 
-Act as my board of directors and analyse this idea from multiple perspectives:
+            <pre>I'm [YOUR SITUATION - e.g., redesigning an assessment for my management unit].
 
-1. As CFO: What are the financial considerations, risks, and potential ROI?
-2. As Marketing Director: How would you position this and reach the target market?
-3. As Operations Manager: What are the practical challenges?
-4. As Legal Counsel: What regulations or legal issues should I consider?
+Act as my advisory board and analyse this from multiple perspectives:
 
-For each perspective, give me 3-4 key points to consider.</pre>
+1. As Learning Designer: Alignment with learning outcomes?
+2. As Academic Integrity Officer: AI vulnerability and integrity?
+3. As Student Advocate: Workload, clarity, and fairness?
+4. As Industry Partner: Real-world relevance and skills?
+
+For each perspective, give me 3-4 key considerations.</pre>
         </div>
 
         <div class="tip-box">
-            <h4>Try These Business Ideas</h4>
+            <h4>Try These Situations</h4>
             <ul>
-                <li>A meal prep delivery service for university students</li>
-                <li>A tutoring app connecting students with recent graduates</li>
-                <li>A sustainable fashion rental service</li>
-                <li>A cashless coffee shop near campus</li>
+                <li>Redesigning an assessment that's vulnerable to AI</li>
+                <li>Creating an AI use policy for your unit</li>
+                <li>Planning a new module or course</li>
+                <li>Developing feedback approaches for large classes</li>
             </ul>
         </div>
     </div>
 
     <div class="section">
         <h2 data-num="2">Devil's Advocate Technique</h2>
-        <p class="section-intro">Force AI to argue against your position to find weaknesses. Replace [YOUR IDEA/POSITION] with what you want to stress-test.</p>
-        
+        <p class="section-intro">Force AI to argue against your position to find weaknesses. Replace [YOUR POSITION] with what you want to stress-test.</p>
+
         <div class="prompt-box">
             <h3>Critical Analysis</h3>
             <button class="copy-btn no-print" onclick="copyPrompt(this)">Copy</button>
-            <pre>I believe that [YOUR IDEA/POSITION].
+            <pre>I believe that [YOUR POSITION - e.g., banning AI from assessments is the best approach for maintaining academic integrity].
 
-Play devil's advocate. Give me the strongest possible arguments against this idea. 
+Play devil's advocate. Give me the strongest possible arguments against this position.
 Be harsh but fair. I want to know:
 
-1. Why might this fail?
+1. Why might this approach fail?
 2. What am I probably not thinking about?
 3. Who would this NOT work for?
-4. What market conditions could kill this?
+4. What unintended consequences could occur?
 
 Don't hold back - I need to hear the hard truths.</pre>
         </div>
 
         <div class="tip-box">
             <h4>Key Phrases That Work</h4>
-            <p>"Be harsh but fair" and "Don't hold back" give AI permission to be genuinely critical instead of polite.</p>
+            <p>"Be harsh but fair" and "Don't hold back" give AI permission to be genuinely critical instead of polite. Without these phrases, AI tends to soften its critique.</p>
         </div>
     </div>
 
     <div class="section">
         <h2 data-num="3">Reverse Prompting</h2>
-        <p class="section-intro">Let AI interview YOU before giving advice. This produces much more tailored recommendations.</p>
-        
+        <p class="section-intro">Let AI interview YOU before giving advice. This produces much more tailored recommendations than generic queries.</p>
+
         <div class="prompt-box">
             <h3>AI Interviews You</h3>
             <button class="copy-btn no-print" onclick="copyPrompt(this)">Copy</button>
-            <pre>I want to [YOUR GOAL - e.g., create a marketing plan, write a business proposal, prepare for an interview].
+            <pre>I want to [YOUR GOAL - e.g., create an AI use policy for my business management units].
 
-Before giving me any advice, interview me first. Ask me questions one at a time 
+Before giving me any advice, interview me first. Ask me questions one at a time
 to understand:
-- My specific situation and context
-- My constraints (budget, time, resources)
-- My goals and success criteria
-- My experience level
-- Any other relevant factors
+- My teaching context and student level
+- My current assessment types
+- My concerns about AI use
+- My goals for student learning
+- Any constraints I'm working with
 
 After you understand my situation, then give me tailored recommendations.
 
@@ -311,68 +331,112 @@ Start with your first question.</pre>
         </div>
 
         <div class="tip-box">
-            <h4>Use Cases for Students</h4>
+            <h4>Use Cases for Educators</h4>
             <ul>
-                <li>Preparing for job interviews</li>
-                <li>Planning group project presentations</li>
-                <li>Writing cover letters</li>
-                <li>Developing business case studies</li>
+                <li>Creating AI policies tailored to your context</li>
+                <li>Redesigning assessments for AI resilience</li>
+                <li>Developing rubrics for new assessment types</li>
+                <li>Planning curriculum changes</li>
             </ul>
         </div>
     </div>
 
     <div class="section">
-        <h2 data-num="4">Bonus: Assignment Helper</h2>
-        <p class="section-intro">Use AI to improve your own work without having it write for you.</p>
-        
+        <h2 data-num="4">Assessment Stress-Test</h2>
+        <p class="section-intro">Run your assessment through AI to see how vulnerable it is. This reveals what was already breakable.</p>
+
         <div class="prompt-box">
-            <h3>Feedback on Your Draft</h3>
+            <h3>Test Your Assessment</h3>
             <button class="copy-btn no-print" onclick="copyPrompt(this)">Copy</button>
-            <pre>I've written a draft for [ASSIGNMENT TYPE]. I want to improve it myself, 
-so please don't rewrite it.
+            <pre>Here is an assessment task I give to students:
 
-Instead, act as a critical but supportive tutor. Review my draft and tell me:
+[PASTE YOUR ASSESSMENT BRIEF HERE]
 
-1. What are the 2-3 strongest aspects?
-2. What are the 2-3 weakest aspects that need work?
-3. Are there any logical gaps or unclear arguments?
-4. What questions might my reader have that I haven't addressed?
+Please complete this assessment as a student would, using only the information
+in the brief and your general knowledge.
 
-Here's my draft:
-
-[PASTE YOUR DRAFT HERE]</pre>
+After completing it, tell me:
+1. How well could AI complete this independently?
+2. What aspects require genuine student thinking?
+3. How might I redesign this to make student judgment more visible?</pre>
         </div>
 
-        <div class="prompt-box">
-            <h3>Explain a Concept</h3>
-            <button class="copy-btn no-print" onclick="copyPrompt(this)">Copy</button>
-            <pre>Explain [CONCEPT] to me as if I'm a first-year business student.
-
-1. Start with a simple real-world analogy
-2. Then give me the formal definition
-3. Show me one practical example of how it works in business
-4. Tell me one common misconception about this concept
-5. Give me a question I should be able to answer if I understand this</pre>
+        <div class="info-box">
+            <h4>Three Redesign Options</h4>
+            <p><strong>Option A - Process Documentation:</strong> Submit AI transcript, annotate errors, reflection on improvement</p>
+            <p><strong>Option B - In-Class Components:</strong> AI draft before class, in-class critique, live presentation</p>
+            <p><strong>Option C - Personal Application:</strong> Local context, primary data, unique perspective AI can't have</p>
         </div>
     </div>
 
     <div class="section">
-        <h2 data-num="5">Verification Checklist</h2>
+        <h2 data-num="5">Bonus: Teaching Support</h2>
+        <p class="section-intro">Practical prompts for everyday teaching tasks.</p>
+
+        <div class="prompt-box">
+            <h3>Generate Feedback (then edit it)</h3>
+            <button class="copy-btn no-print" onclick="copyPrompt(this)">Copy</button>
+            <pre>I'm providing feedback on a student essay for [UNIT/TOPIC].
+
+The assignment asked students to [ASSIGNMENT REQUIREMENT].
+
+Here is the student's work:
+
+[PASTE STUDENT WORK]
+
+Draft constructive feedback that:
+1. Identifies 2-3 strengths
+2. Identifies 2-3 areas for improvement with specific suggestions
+3. Ends with an encouraging next step
+4. Is appropriate for [YEAR LEVEL] students
+
+Note: I will review and personalise this before sending to the student.</pre>
+        </div>
+
+        <div class="prompt-box">
+            <h3>Generate Discussion Questions</h3>
+            <button class="copy-btn no-print" onclick="copyPrompt(this)">Copy</button>
+            <pre>I'm teaching [TOPIC] to [YEAR LEVEL] [DISCIPLINE] students.
+
+Generate 5 discussion questions that:
+1. Move beyond recall to analysis and application
+2. Connect theory to real-world business scenarios
+3. Could spark genuine debate (not just "right answers")
+4. Are appropriate for a 50-minute tutorial
+
+Include one "devil's advocate" question that challenges conventional thinking.</pre>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2 data-num="6">Verification Checklist</h2>
         <p class="section-intro">Always verify AI outputs before using them. Remember: AI is confident even when wrong.</p>
-        
+
         <ul class="checklist">
             <li>Can I find cited sources independently? (Search for them)</li>
             <li>Do statistics appear in other reputable sources?</li>
             <li>Does this make logical sense based on what I know?</li>
-            <li>Would I stake my grade/reputation on this being accurate?</li>
-            <li>Have I read and understood the output (not just copied it)?</li>
+            <li>Would I stake my professional reputation on this being accurate?</li>
+            <li>Have I reviewed and personalised the output (not just copied it)?</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2 data-num="7">Your One Commitment</h2>
+        <p class="section-intro">Start small. Scale what works. Share with colleagues.</p>
+
+        <ul class="checklist">
+            <li>Use AI to draft feedback on student work (then edit it)</li>
+            <li>Try the Board of Directors prompt on something you're planning</li>
+            <li>Run one of your assessments through AI to see what happens</li>
+            <li>Use Reverse Prompting when you're unsure where to start</li>
         </ul>
     </div>
 
     <footer>
-        <p>Companion Website: <a href="index.html">AI Boardroom Resources</a></p>
+        <p>Companion Website: <a href="index.html">AI for Educators Resources</a></p>
         <p>Style Mirror Tool: <a href="style-mirror.html">Help AI Write in Your Voice</a></p>
-        <p>Curtin Singapore | MGMT1003 Introduction to Business</p>
+        <p>Curtin University | Faculty Development</p>
     </footer>
 
     <script>

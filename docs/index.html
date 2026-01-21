@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AI Boardroom - Companion Website</title>
+    <title>AI for Educators - Companion Website</title>
     <style>
         :root {
             --primary: #1a365d;
@@ -14,6 +14,8 @@
             --text-light: #4a5568;
             --border: #e2e8f0;
             --white: #ffffff;
+            --purple: #667eea;
+            --purple-light: #f0f5ff;
         }
 
         * {
@@ -63,6 +65,116 @@
         .hero h2 {
             color: var(--primary);
             margin-bottom: 1rem;
+        }
+
+        /* New Here Section */
+        .start-here {
+            background: var(--purple-light);
+            padding: 2rem;
+            border-radius: 8px;
+            margin-bottom: 2rem;
+            border-left: 4px solid var(--purple);
+        }
+
+        .start-here h2 {
+            color: var(--purple);
+            margin-bottom: 1rem;
+            text-align: center;
+        }
+
+        .start-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+            margin-top: 1.5rem;
+        }
+
+        .start-card {
+            background: var(--white);
+            border: 2px solid var(--border);
+            border-radius: 8px;
+            padding: 1.5rem;
+            text-align: center;
+        }
+
+        .start-card-icon {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .start-card h3 {
+            color: var(--primary);
+            margin-bottom: 0.5rem;
+        }
+
+        .start-card p {
+            color: var(--text-light);
+            font-size: 0.95rem;
+            margin-bottom: 1rem;
+        }
+
+        /* Learning Paths */
+        .paths-section {
+            margin-bottom: 3rem;
+        }
+
+        .paths-section h2 {
+            color: var(--primary);
+            text-align: center;
+            margin-bottom: 0.5rem;
+        }
+
+        .paths-intro {
+            text-align: center;
+            color: var(--text-light);
+            margin-bottom: 1.5rem;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .paths-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .path-card {
+            background: var(--white);
+            border: 2px solid var(--border);
+            border-radius: 8px;
+            padding: 1.5rem;
+            text-decoration: none;
+            color: var(--text);
+            transition: all 0.2s ease;
+            text-align: center;
+        }
+
+        .path-card:hover {
+            border-color: var(--accent);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+
+        .path-icon {
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .path-card h3 {
+            color: var(--primary);
+            margin-bottom: 0.5rem;
+        }
+
+        .path-card p {
+            color: var(--text-light);
+            font-size: 0.9rem;
+        }
+
+        .path-time {
+            font-size: 0.85rem;
+            color: #999;
+            margin-top: 0.5rem;
         }
 
         .quick-links {
@@ -177,6 +289,14 @@
             background: var(--secondary);
         }
 
+        .btn-purple {
+            background: var(--purple);
+        }
+
+        .btn-purple:hover {
+            background: #5a67d8;
+        }
+
         footer {
             background: var(--primary);
             color: var(--white);
@@ -213,16 +333,32 @@
             margin-bottom: 0.5rem;
         }
 
+        .info-box {
+            background: var(--purple-light);
+            border: 1px solid var(--purple);
+            border-left: 4px solid var(--purple);
+            padding: 1rem;
+            border-radius: 6px;
+            margin: 1.5rem 0;
+        }
+
+        .info-box p {
+            color: var(--text);
+            font-size: 0.95rem;
+        }
+
         @media (max-width: 768px) {
             header h1 {
                 font-size: 1.8rem;
             }
-            
+
             .container {
                 padding: 1rem;
             }
-            
-            .quick-links {
+
+            .quick-links,
+            .paths-grid,
+            .start-grid {
                 grid-template-columns: 1fr;
             }
         }
@@ -230,24 +366,69 @@
 </head>
 <body>
     <header>
-        <h1>AI Boardroom</h1>
-        <p>Leveraging AI for Business Strategy - Companion Website</p>
+        <h1>AI for Educators</h1>
+        <p>Understanding Instructions at the Heart of AI - Companion Website</p>
     </header>
 
     <div class="container">
         <div class="hero">
-            <h2>Welcome, MGMT1003 Students</h2>
-            <p>This companion website contains all the resources from today's session on using AI as a strategic thinking partner. Bookmark this page for future reference - you'll find prompts to try, deeper reading on AI concepts, and tools to improve your AI interactions.</p>
+            <h2>Welcome, Educators</h2>
+            <p>This companion website supports your journey into understanding and using AI thoughtfully. Whether you attended the presentation or are exploring independently, you'll find prompts to try, deeper reading on AI concepts, and tools to improve your AI interactions.</p>
+        </div>
+
+        <!-- New Here Section -->
+        <div class="start-here">
+            <h2>New Here? Start Here</h2>
+            <div class="start-grid">
+                <div class="start-card">
+                    <div class="start-card-icon">🎯</div>
+                    <h3>Using AI to Help You Use AI</h3>
+                    <p>AI can teach you how to use itself. It interviews you about your role and context, then recommends ways to use AI in your work. Discover your own starting point.</p>
+                    <a href="content/ai-to-help-you-use-ai.html" class="btn btn-purple">Learn This Meta-Skill</a>
+                </div>
+                <div class="start-card">
+                    <div class="start-card-icon">📋</div>
+                    <h3>Get Personalised Recommendations</h3>
+                    <p>Take a quick diagnostic to understand your current AI literacy level. Get personalised reading suggestions and resources tailored to where you are now.</p>
+                    <a href="diagnostic.html" class="btn btn-purple">Start Assessment</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Learning Paths -->
+        <div class="paths-section">
+            <h2>Choose Your Path</h2>
+            <p class="paths-intro">Pick a time-based path depending on how much time you have. All paths lead to practical skills.</p>
+            <div class="paths-grid">
+                <a href="#quick-reference" class="path-card">
+                    <div class="path-icon">⚡</div>
+                    <h3>5-Minute Essentials</h3>
+                    <p>Just the prompts from the session, ready to copy and use</p>
+                    <p class="path-time">~5 minutes</p>
+                </a>
+                <a href="#core-guides" class="path-card">
+                    <div class="path-icon">📖</div>
+                    <h3>20-Minute Primer</h3>
+                    <p>Foundational understanding of AI and LLMs</p>
+                    <p class="path-time">~20 minutes</p>
+                </a>
+                <a href="#all-guides" class="path-card">
+                    <div class="path-icon">🎯</div>
+                    <h3>Deep Dive</h3>
+                    <p>Comprehensive coverage of prompting and pedagogy</p>
+                    <p class="path-time">~60+ minutes</p>
+                </a>
+            </div>
         </div>
 
         <div class="quick-links">
             <a href="handout.html" class="quick-link">
-                <h3>Student Handout</h3>
-                <p>All the prompts from today's session, ready to copy and paste into your AI tool of choice.</p>
+                <h3>Educator Handout</h3>
+                <p>All the prompts from the session, ready to copy and paste into your AI tool of choice.</p>
             </a>
             <a href="style-mirror.html" class="quick-link">
                 <h3>Style Mirror Tool</h3>
-                <p>Interactive tool to help AI write in your voice. Great for assignments and professional communication.</p>
+                <p>Interactive tool to help AI write in your voice. Great for feedback and communication.</p>
             </a>
             <a href="content/deloitte_AI_hallucinations_report.html" class="quick-link">
                 <h3>Deloitte Case Study</h3>
@@ -255,13 +436,17 @@
             </a>
         </div>
 
-        <div class="warning-box">
-            <h4>Remember: The Billboard Rule</h4>
-            <p>Before sharing anything with AI, ask yourself: "Would I be comfortable if this appeared on a billboard?" Never share passwords, personal data about others, or confidential information.</p>
+        <div class="info-box">
+            <p><strong>A note on AI concerns:</strong> We recognise that many educators have genuine concerns about AI in education. This resource addresses them directly. The uniquely human skills of empathy, mentorship, and contextual judgment become <em>more</em> valuable as we integrate AI, not less.</p>
         </div>
 
-        <div class="section">
-            <h2>Core Guides</h2>
+        <div class="warning-box">
+            <h4>Remember: The Billboard Rule</h4>
+            <p>Before sharing anything with AI, ask yourself: "Would I be comfortable if this appeared on a billboard?" Never share student data, personal information about others, or confidential institutional data.</p>
+        </div>
+
+        <div class="section" id="core-guides">
+            <h2>Core Guides (20-Minute Primer)</h2>
             <div class="guides-grid">
                 <a href="content/what-is-ai.html" class="guide-card">
                     <h4>What is AI?</h4>
@@ -273,19 +458,25 @@
                 </a>
                 <a href="content/craft-prompting-framework.html" class="guide-card">
                     <h4>CRAFT Prompting Framework</h4>
-                    <p>A structured approach to writing effective prompts: Context, Role, Action, Format, Target.</p>
+                    <p>A structured approach to writing effective instructions: Context, Role, Action, Format, Target.</p>
                 </a>
+            </div>
+        </div>
+
+        <div class="section" id="all-guides">
+            <h2>All Guides (Deep Dive)</h2>
+            <div class="guides-grid">
                 <a href="content/seven-techniques.html" class="guide-card">
                     <h4>Seven Prompting Techniques</h4>
-                    <p>Advanced techniques including chain-of-thought, few-shot learning, and more.</p>
+                    <p>Advanced techniques including reverse prompting, role play, debating, and expert panels.</p>
                 </a>
                 <a href="content/critique-toolkit.html" class="guide-card">
                     <h4>AI Critique Toolkit</h4>
-                    <p>How to use AI to critically analyse ideas, strategies, and decisions.</p>
+                    <p>5-step framework for evaluating AI output: Purpose, Plausibility, Evidence, Stakes, Action.</p>
                 </a>
                 <a href="content/ethics-integrity.html" class="guide-card">
                     <h4>Ethics & Integrity</h4>
-                    <p>Using AI responsibly in academic and professional contexts.</p>
+                    <p>Using AI responsibly in academic and professional contexts. Assessment design considerations.</p>
                 </a>
                 <a href="content/how-to-tell-whats-real-online.html" class="guide-card">
                     <h4>Evaluating Online Information</h4>
@@ -293,9 +484,65 @@
                 </a>
                 <a href="content/ai-to-help-you-use-ai.html" class="guide-card">
                     <h4>Using AI to Learn AI</h4>
-                    <p>Meta-skill: how to use AI tools to improve your AI skills.</p>
+                    <p>Meta-skill: how to use AI tools to discover your own AI opportunities.</p>
                 </a>
             </div>
+        </div>
+
+        <div class="section" id="quick-reference">
+            <h2>Session Prompts - Quick Reference</h2>
+
+            <h3 style="margin-top: 1.5rem; color: var(--secondary);">Board of Directors Strategy</h3>
+            <pre style="background: #f7fafc; padding: 1rem; border-radius: 6px; overflow-x: auto; font-size: 0.9rem; border: 1px solid var(--border);">I'm [YOUR SITUATION - e.g., redesigning an assessment, planning a new unit].
+
+Act as my advisory board and analyse this from multiple perspectives:
+
+1. As Learning Designer: Alignment with learning outcomes?
+2. As Academic Integrity Officer: AI vulnerability and integrity?
+3. As Student Advocate: Workload, clarity, and fairness?
+4. As Industry Partner: Real-world relevance and skills?
+
+For each perspective, give me 3-4 key considerations.</pre>
+
+            <h3 style="margin-top: 1.5rem; color: var(--secondary);">Devil's Advocate</h3>
+            <pre style="background: #f7fafc; padding: 1rem; border-radius: 6px; overflow-x: auto; font-size: 0.9rem; border: 1px solid var(--border);">I believe that [YOUR POSITION - e.g., banning AI from assessments is the best approach].
+
+Play devil's advocate. Give me the strongest possible arguments against this position.
+Be harsh but fair. I want to know:
+
+1. Why might this approach fail?
+2. What am I probably not thinking about?
+3. Who would this NOT work for?
+4. What unintended consequences could occur?
+
+Don't hold back - I need to hear the hard truths.</pre>
+
+            <h3 style="margin-top: 1.5rem; color: var(--secondary);">Reverse Prompting</h3>
+            <pre style="background: #f7fafc; padding: 1rem; border-radius: 6px; overflow-x: auto; font-size: 0.9rem; border: 1px solid var(--border);">I want to [YOUR GOAL - e.g., create an AI policy for my units, redesign my assessment].
+
+Before giving me any advice, interview me first. Ask me questions one at a time
+to understand:
+- My teaching context and student level
+- My current situation and constraints
+- My concerns and goals
+- Any other relevant factors
+
+After you understand my situation, then give me tailored recommendations.
+
+Start with your first question.</pre>
+
+            <h3 style="margin-top: 1.5rem; color: var(--secondary);">Assessment Stress-Test</h3>
+            <pre style="background: #f7fafc; padding: 1rem; border-radius: 6px; overflow-x: auto; font-size: 0.9rem; border: 1px solid var(--border);">Here is an assessment task I give to students:
+
+[PASTE YOUR ASSESSMENT BRIEF HERE]
+
+Please complete this assessment as a student would, using only the information
+in the brief and your general knowledge.
+
+After completing it, tell me:
+1. How well could AI complete this independently?
+2. What aspects require genuine student thinking?
+3. How might I redesign this to make student judgment more visible?</pre>
         </div>
 
         <div class="section tools-section">
@@ -308,53 +555,15 @@
         </div>
 
         <div class="section">
-            <h2>Session Prompts - Quick Reference</h2>
-            
-            <h3 style="margin-top: 1.5rem; color: var(--secondary);">Board of Directors Strategy</h3>
-            <pre style="background: #f7fafc; padding: 1rem; border-radius: 6px; overflow-x: auto; font-size: 0.9rem; border: 1px solid var(--border);">I'm considering [YOUR BUSINESS IDEA]. 
-Act as my board of directors and analyse this idea from multiple perspectives:
-
-1. As CFO: What are the financial considerations, risks, and potential ROI?
-2. As Marketing Director: How would you position this and reach the target market?
-3. As Operations Manager: What are the practical challenges?
-4. As Legal Counsel: What regulations or legal issues should I consider?
-
-For each perspective, give me 3-4 key points to consider.</pre>
-
-            <h3 style="margin-top: 1.5rem; color: var(--secondary);">Devil's Advocate</h3>
-            <pre style="background: #f7fafc; padding: 1rem; border-radius: 6px; overflow-x: auto; font-size: 0.9rem; border: 1px solid var(--border);">I believe that [YOUR IDEA/POSITION].
-
-Play devil's advocate. Give me the strongest possible arguments against this idea. 
-Be harsh but fair. I want to know:
-
-1. Why might this fail?
-2. What am I probably not thinking about?
-3. Who would this NOT work for?
-4. What market conditions could kill this?
-
-Don't hold back - I need to hear the hard truths.</pre>
-
-            <h3 style="margin-top: 1.5rem; color: var(--secondary);">Reverse Prompting</h3>
-            <pre style="background: #f7fafc; padding: 1rem; border-radius: 6px; overflow-x: auto; font-size: 0.9rem; border: 1px solid var(--border);">I want to [YOUR GOAL - e.g., create a marketing plan, write a business proposal].
-
-Before giving me any advice, interview me first. Ask me questions one at a time 
-to understand my specific situation, constraints, and goals.
-
-After you understand my situation, then give me tailored recommendations.
-
-Start with your first question.</pre>
-        </div>
-
-        <div class="section">
             <h2>Recommended AI Tools</h2>
             <div class="guides-grid">
                 <div class="guide-card">
                     <h4>Google Gemini (Free)</h4>
-                    <p>Great free tier for students. Access at <a href="https://gemini.google.com" target="_blank">gemini.google.com</a></p>
+                    <p>Great free tier, integrates with Google Workspace. Access at <a href="https://gemini.google.com" target="_blank">gemini.google.com</a></p>
                 </div>
                 <div class="guide-card">
                     <h4>ChatGPT (Free/Paid)</h4>
-                    <p>OpenAI's popular assistant. Access at <a href="https://chat.openai.com" target="_blank">chat.openai.com</a></p>
+                    <p>OpenAI's popular assistant, widely used. Access at <a href="https://chat.openai.com" target="_blank">chat.openai.com</a></p>
                 </div>
                 <div class="guide-card">
                     <h4>Claude (Free/Paid)</h4>
@@ -365,8 +574,8 @@ Start with your first question.</pre>
     </div>
 
     <footer>
-        <p>AI Boardroom - MGMT1003 Guest Lecture</p>
-        <p>Dr. Michael Borck | Curtin Singapore | December 2025</p>
+        <p>AI for Educators - Faculty Development Resource</p>
+        <p>Dr. Michael Borck | Curtin University | 2026</p>
     </footer>
 </body>
 </html>
