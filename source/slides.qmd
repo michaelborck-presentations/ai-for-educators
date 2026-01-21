@@ -9,7 +9,7 @@ format: pptx
 ![](images/440000.png)
 
 ::: {.notes}
-Pause for 2-3 seconds before speaking.
+Pause for 2-3 seconds before speaking. Let the number sink in.
 
 "$440,000. That's what the Australian government paid Deloitte for a welfare review report earlier this year."
 
@@ -22,9 +22,15 @@ Pause for 2-3 seconds before speaking.
 - Australia: $440,000 welfare review - partial refund issued
 - Canada: $1.6 million healthcare report - 4 incorrect citations found
 
+**Why this matters:**
+
+Deloitte is one of the world's largest consulting firms. They have rigorous quality assurance processes, experienced professionals, and reputations built over decades. Yet their consultants trusted AI-generated content without verification. The AI didn't malfunction - it did exactly what it was designed to do: generate plausible-sounding text. The failure was human: no one checked whether the citations were real.
+
 **The lesson:** AI is confident even when wrong. Verification is essential.
 
-**Why this matters for us:** Your students will encounter this. Some already are. Today, I'm going to show you how to think about AI - and how to teach others to use it wisely.
+**Why this matters for us:** Your students will encounter this. Some already are. Many are using AI for assignments right now - and they're trusting it the same way Deloitte did. Today, I'm going to show you how to think about AI - and how to teach others to use it wisely.
+
+**Transition:** "But before we dive into techniques, let's address something that rarely gets discussed..."
 :::
 
 ## Today's Session
@@ -37,6 +43,14 @@ Pause for 2-3 seconds before speaking.
 
 **Companion Website:** [Link provided]
 
+::: {.notes}
+Briefly walk through the agenda. Emphasise that this is a practical session - they'll leave with prompts they can use immediately.
+
+Mention the companion website early so they know there's a resource for deeper exploration. If you have a QR code, display it now and give them a moment to scan it.
+
+**Key framing:** "This session is designed for educators at any level of AI experience. Whether you've never used ChatGPT or you use it daily, you'll find something useful here."
+:::
+
 ## Part 1: The Real Barrier
 
 ![](images/ai-mindset)
@@ -44,23 +58,30 @@ Pause for 2-3 seconds before speaking.
 ::: {.notes}
 Before we talk about how to use AI, let's talk about something that doesn't get discussed enough.
 
-**The elephant in the room.**
-:::
+**The elephant in the room: AI Shame**
 
-## AI Shame - The Hidden Barrier
+Here's what the research tells us:
 
-**The statistics:**
-
-- 70% of knowledge workers use AI weekly
-- 63% fear being seen as incompetent or lazy
-- Most hide their AI use from colleagues
+- 70% of knowledge workers use AI weekly (Microsoft Work Trend Index, 2024)
+- Yet 63% fear being seen as incompetent or lazy for using it
+- Most people hide their AI use from colleagues and managers
 
 **Sound familiar?**
 
-::: {.notes}
-This creates "underground use" - people using AI without sharing best practices, without developing skills openly, without learning from each other.
+This creates what I call "underground use" - people using AI without sharing best practices, without developing skills openly, without learning from each other. It's like everyone secretly using calculators but pretending they're doing mental arithmetic.
 
-**The reframe:** Using AI thoughtfully is a professional skill. Hiding it prevents growth.
+**Why does this shame exist?**
+
+1. **Fear of being seen as "cheating"** - We've internalised that good work must be hard work
+2. **Imposter syndrome** - "If AI helped me, did I really earn this?"
+3. **Uncertainty about norms** - We don't know what's acceptable, so we hide
+4. **Generational anxiety** - Younger colleagues seem more comfortable, which amplifies the discomfort
+
+**The reframe:** Using AI thoughtfully is a professional skill, like using a spreadsheet or search engine. The skill isn't avoiding AI - it's knowing when to use it, how to verify its output, and when human judgement is essential.
+
+**Discussion prompt (optional):** "Quick show of hands - how many of you have used AI for work but haven't really told anyone about it?" Usually gets knowing laughs and breaks the tension.
+
+**Transition:** "Now let's address the fear that often underlies this shame..."
 :::
 
 ## Your Expertise Matters MORE, Not Less
@@ -70,14 +91,37 @@ This creates "underground use" - people using AI without sharing best practices,
 **The reality:**
 
 - AI handles routine tasks
-- YOU provide judgment, connection, inspiration
+- YOU provide judgement, connection, inspiration
 - Students don't need you less - they need you MORE
 - Your domain expertise is essential for evaluating AI output
 
 ::: {.notes}
-Think about calculators. Did they make maths teachers redundant? No - they changed WHAT we teach and HOW.
+This slide addresses the existential fear many educators carry but rarely voice.
 
-Same with AI. Your expertise in pedagogy, in your discipline, in understanding your students - that becomes MORE valuable, not less.
+**The historical perspective:**
+
+Think about calculators. When they became widely available, people worried maths teachers would become redundant. What actually happened? Calculators changed WHAT we teach and HOW we teach it. We stopped drilling long division and started focusing on mathematical thinking, problem-solving, and knowing which operations to apply. Maths teachers became MORE important, not less.
+
+The same pattern repeated with:
+- Spell-checkers (didn't replace English teachers)
+- Wikipedia (didn't replace researchers)
+- Google (didn't replace librarians - though it changed their role)
+
+**Why your expertise matters MORE:**
+
+1. **Curation and verification** - AI generates content; you determine what's worth keeping
+2. **Contextual judgement** - You know YOUR students, YOUR institution, YOUR discipline
+3. **Connection and inspiration** - AI can't mentor, can't notice a struggling student, can't inspire passion for a subject
+4. **Ethical guidance** - Students need to learn WHEN and HOW to use AI responsibly
+
+**The shift in your role:**
+
+- From: Content delivery expert
+- To: Learning experience architect + critical thinking coach + ethical guide
+
+**Key message:** "Students don't need you less in the age of AI. They need you MORE - to help them navigate this new landscape with wisdom and integrity."
+
+**Transition:** "Now let's talk about how AI actually works - and it's simpler than you might think..."
 :::
 
 ## Part 2: The Core Concept
@@ -85,13 +129,30 @@ Same with AI. Your expertise in pedagogy, in your discipline, in understanding y
 ![](images/smart-intern.png)
 
 ::: {.notes}
-Here's the key insight I want you to take away:
+Here's the key insight I want you to take away from today:
 
 **At the heart of ALL AI are instructions.**
 
-We sometimes call this "prompt engineering" or "context engineering" - but really, it's just giving clear instructions.
+You might hear terms like "prompt engineering" or "context engineering" - these are just fancy ways of saying "giving clear instructions." The AI industry loves jargon, but don't let it intimidate you.
 
-The better your instructions, the better the output.
+**Why instructions matter:**
+
+Large Language Models (LLMs) like ChatGPT, Claude, and Gemini are essentially sophisticated pattern-matching systems. They've been trained on vast amounts of text and learned to predict "what comes next" in a conversation. When you give them instructions, you're steering that prediction.
+
+- Vague instructions → vague, generic output
+- Clear, specific instructions → useful, tailored output
+
+**The instruction components:**
+
+1. **Context** - What's the situation? What do you already know?
+2. **Role** - Who should the AI pretend to be? (expert, critic, interviewer)
+3. **Task** - What specifically do you want it to do?
+4. **Format** - How should the output be structured?
+5. **Constraints** - What should it avoid or include?
+
+You don't need to memorise frameworks. Just remember: the clearer you are about what you want, the better the result.
+
+**Transition:** "Let me give you a mental model for thinking about AI..."
 :::
 
 ## AI is a Smart Intern Who Hallucinates
@@ -106,6 +167,35 @@ The better your instructions, the better the output.
 
 > Think of AI like a brilliant intern. They're eager, fast, and can do amazing work. But they might confidently present completely made-up statistics.
 
+::: {.notes}
+This analogy is powerful because it captures both the usefulness and the danger of AI.
+
+**The brilliant intern:**
+
+Imagine you've hired the most impressive graduate you've ever met. They're:
+- Incredibly fast - they can draft a report in minutes
+- Eager to please - they'll tackle any task you give them
+- Well-read - they seem to know something about everything
+- Articulate - their writing is polished and professional
+
+**But here's the catch:**
+
+This intern has a peculiar quirk: they NEVER say "I don't know." If you ask them for a statistic, they'll give you one - whether or not it's real. If you ask for a citation, they'll provide one - even if the paper doesn't exist. They're not lying maliciously; they genuinely believe they're being helpful. They've learned that providing confident answers pleases people.
+
+**The implications for us:**
+
+1. **Never trust without verifying** - Especially citations, statistics, and factual claims
+2. **Use AI for drafts, not finals** - Let it generate; you curate and verify
+3. **Play to its strengths** - Brainstorming, structure, alternative perspectives
+4. **Know its weaknesses** - Current events, niche expertise, anything requiring truth
+
+**Why "reasoning engine, not search engine" matters:**
+
+When you Google something, you get links to sources that exist. When you ask AI something, it generates a response that SOUNDS like it should be true. This is a fundamentally different kind of tool, and treating it like a search engine is how Deloitte got into trouble.
+
+**Transition:** "So how should we approach this tool? Here's the golden rule..."
+:::
+
 ## The Golden Rule
 
 ![](images/robot-think.png)
@@ -113,9 +203,36 @@ The better your instructions, the better the output.
 ::: {.notes}
 **AI should challenge your thinking, not replace it.**
 
-The moment you stop questioning AI's output is the moment you become Deloitte.
+This is the single most important principle I can share with you today.
+
+**What this means in practice:**
+
+1. **Use AI to expand your options, not to decide for you**
+   - Ask it for alternatives you haven't considered
+   - Ask it to argue against your position
+   - Ask it to identify what you might be missing
+
+2. **Stay in the editor's chair**
+   - AI generates; you evaluate
+   - AI suggests; you decide
+   - AI drafts; you refine
+
+3. **Maintain intellectual ownership**
+   - Can you explain and defend every part of the output?
+   - Could you have written this yourself (even if slower)?
+   - Do you understand the reasoning, not just the conclusion?
+
+**The Deloitte test:**
+
+The moment you stop questioning AI's output is the moment you become Deloitte. Their consultants trusted the AI-generated citations because they looked right. They abdicated their responsibility to verify.
 
 **Your role:** Editor-in-Chief, not stenographer.
+
+An editor-in-chief doesn't write every article, but they take responsibility for everything published. They question, verify, and ultimately decide what meets the standard. That's your relationship with AI output.
+
+**Practical tip:** After AI generates something, always ask yourself: "Would I stake my professional reputation on this being accurate and appropriate?" If not, verify or revise.
+
+**Transition:** "Now let's look at three practical techniques you can use immediately..."
 :::
 
 
@@ -126,14 +243,40 @@ The moment you stop questioning AI's output is the moment you become Deloitte.
 ::: {.notes}
 Now let's look at three practical techniques. These work for YOUR work AND you can teach them to students.
 
+**Technique 1: Board of Directors (Multi-Perspective Prompting)**
+
 **The concept:** Get multiple expert viewpoints in one prompt
 
-- CFO perspective (financial)
-- Marketing Director (customers)
-- Operations Manager (practical)
-- Legal Counsel (compliance)
+When you're making a decision, you naturally want different perspectives. In an organisation, you might consult:
+- The CFO (financial implications)
+- The Marketing Director (customer impact)
+- The Operations Manager (practical feasibility)
+- Legal Counsel (compliance and risk)
 
-**Why it works:** Catches blind spots you'd miss thinking alone
+Consulting all these people takes time and coordination. AI can simulate this conversation instantly.
+
+**Why it works:**
+
+1. **Catches blind spots** - Each "director" focuses on different concerns
+2. **Surfaces tensions** - You see where priorities conflict
+3. **Provides structure** - Organises thinking into clear categories
+4. **Saves time** - Get multiple perspectives in one interaction
+
+**Adapting for education:**
+
+Instead of business roles, use educational stakeholders:
+- Learning Designer (pedagogical alignment)
+- Academic Integrity Officer (AI vulnerability)
+- Student Advocate (workload and fairness)
+- Industry Partner (real-world relevance)
+
+**When to use this:**
+- Designing or redesigning assessments
+- Planning curriculum changes
+- Developing policies
+- Making decisions that affect multiple stakeholders
+
+**Transition:** "Let me show you this in action..."
 :::
 
 
@@ -155,19 +298,37 @@ For each perspective, give me 3-4 key considerations.
 ```
 
 ::: {.notes}
-Switch to browser and run this demo in Gemini or Claude.
+**Running the demo:**
 
-## Your Turn: Try It
+Switch to browser and run this prompt in Gemini or Claude. As you wait for the response, explain what's happening:
 
-Think about something you're working on:
+"Notice I've given the AI a clear structure. I've told it WHO to be, WHAT to analyse, and HOW to format the response. This is what we mean by clear instructions."
+
+**Discussing the output:**
+
+As the response generates, highlight:
+- How each perspective raises different concerns
+- Where the perspectives might conflict (e.g., rigour vs. workload)
+- Insights you might not have considered alone
+
+**Key teaching point:**
+
+"The AI isn't giving you THE answer. It's giving you a structured way to think about the problem. You still need to weigh these perspectives and make the decision."
+
+## Participant Activity (if time permits):
+
+"Now it's your turn. Think about something you're actually working on:
 
 - Redesigning an assessment
 - Planning a new unit or module
 - Developing a policy or guideline
 - Preparing for a difficult conversation
 
-**Try the Board of Directors prompt with your situation.**
+Try the Board of Directors prompt with your situation. You can use the exact roles I showed, or adapt them to fit your context."
 
+Give 3-4 minutes for this. Invite people to share interesting insights in the chat or verbally.
+
+**Transition:** "What if you want AI to poke holes in your idea? That's our next technique..."
 :::
 
 
@@ -176,16 +337,43 @@ Think about something you're working on:
 ![](images/devils-advocate.png)
 
 ::: {.notes}
+**Technique 2: Devil's Advocate**
 
-**The problem:** We look for evidence that supports our ideas
+**The problem:** Confirmation bias
+
+When we have an idea we believe in, we naturally:
+- Seek evidence that supports it
+- Dismiss evidence that contradicts it
+- Surround ourselves with people who agree
+- Interpret ambiguous information favourably
+
+This is human nature, not a character flaw. But in professional contexts, it's dangerous. It's how bad decisions get made and why groupthink occurs.
 
 **The solution:** Force AI to argue against your position
 
-**Key phrases that work:**
+The Devil's Advocate technique leverages AI's ability to argue any position convincingly. By explicitly asking it to argue AGAINST you, you get the critique you need but might not seek.
 
-- "Be harsh but fair"
-- "Don't hold back"
-- "I need to hear the hard truths"
+**Why this is hard to do yourself:**
+
+1. **We're attached to our ideas** - It's uncomfortable to seek criticism
+2. **Colleagues may be polite** - They soften feedback to preserve relationships
+3. **We don't know what we don't know** - We can't critique from perspectives we lack
+
+**Why AI is good at this:**
+
+1. **No social stakes** - AI doesn't care about your feelings
+2. **Broad knowledge** - Can draw on many fields to find weaknesses
+3. **No agenda** - Won't soften critique to curry favour
+
+**Key phrases that unlock critical feedback:**
+
+- "Be harsh but fair" - Gives permission to be direct
+- "Don't hold back" - Signals you can handle criticism
+- "I need to hear the hard truths" - Emphasises sincerity
+
+Without these phrases, AI tends to be diplomatically positive. It's trained to be helpful and agreeable. You need to explicitly override that tendency.
+
+**Transition:** "Let me show you how this works..."
 :::
 
 ## Demo: Devil's Advocate Prompt
@@ -207,9 +395,34 @@ Don't hold back - I need to hear the hard truths.
 ```
 
 ::: {.notes}
-Switch to browser and run this demo. Point out how giving AI permission to be critical produces better feedback.
+**Running the demo:**
 
-You can use this for ANY position you hold - it's about stress-testing your thinking.
+Switch to browser and run this prompt. As it generates, explain:
+
+"I've chosen a position that many educators hold sincerely. This isn't about whether the position is right or wrong - it's about stress-testing our thinking."
+
+**Discussing the output:**
+
+Highlight arguments you might not have considered:
+- Equity issues (students with different access to AI support)
+- Enforcement challenges (detection is imperfect)
+- Preparation gap (students enter workplaces where AI is expected)
+- Innovation costs (missing learning opportunities)
+
+**Key teaching point:**
+
+"Notice how the AI found arguments I might never have sought out myself. Some of these might change my mind. Others might help me strengthen my position by preparing counter-arguments."
+
+**Broader applications:**
+
+You can use this for ANY position you hold:
+- "I believe group work is essential for learning..."
+- "I believe exams are the fairest form of assessment..."
+- "I believe attendance should be mandatory..."
+
+The goal isn't to abandon your positions - it's to hold them more intelligently, with awareness of their limitations.
+
+**Transition:** "But what if you don't even know what questions to ask? That's where our third technique comes in..."
 :::
 
 ## Reverse Prompting - When You Don't Know What to Ask
@@ -218,16 +431,40 @@ You can use this for ANY position you hold - it's about stress-testing your thin
 
 
 ::: {.notes}
+**Technique 3: Reverse Prompting**
 
-**The problem:** Sometimes the hardest part is knowing what questions to ask
+**The problem:** Sometimes we don't know what we don't know
+
+We've all been there:
+- Starting a new project with vague requirements
+- Facing a problem outside our expertise
+- Knowing we need help but not knowing what to ask for
+
+When you ask AI a vague question, you get a vague answer. But how do you ask a specific question when you don't understand the domain well enough?
 
 **The solution:** Let AI interview YOU first
 
-**Why it works:**
+Reverse prompting flips the traditional dynamic. Instead of you asking AI questions, you ask AI to interview you. It asks questions, you answer, and then it gives tailored recommendations based on your specific situation.
 
-- AI understands your specific context
-- Recommendations become tailored, not generic
-- You discover what you don't know
+**Why this works:**
+
+1. **Surfaces your implicit knowledge** - AI's questions help you articulate what you know
+2. **Identifies gaps** - Questions you can't answer reveal what you need to figure out
+3. **Provides tailored output** - Recommendations fit YOUR context, not generic advice
+4. **Builds understanding** - The interview process itself is educational
+
+**The GIGO principle:**
+
+"Garbage In, Garbage Out" applies to AI even more than traditional computing. Generic input produces generic output. The interview process ensures the AI has quality input before generating output.
+
+**When to use this:**
+
+- Starting something new (policy, curriculum, project)
+- Facing a problem outside your expertise
+- When you've tried generic prompts and got generic responses
+- When you need advice but don't know what questions to ask
+
+**Transition:** "Let me demonstrate..."
 :::
 
 ## Demo: Reverse Prompting
@@ -251,9 +488,34 @@ Start with your first question.
 ```
 
 ::: {.notes}
-Run this demo. Answer 2-3 questions from the AI to show how the conversation builds context.
+**Running the demo:**
 
-This is particularly powerful when you're unsure where to start.
+Switch to browser and paste this prompt. When AI asks its first question, answer it authentically. Continue for 2-3 questions to show how the conversation develops.
+
+**Example interaction:**
+
+AI: "What level are your students - undergraduate, postgraduate, or a mix?"
+You: "Second-year undergraduates, mostly 19-20 years old, studying business management."
+
+AI: "What types of assessments do you currently use in your units?"
+You: "A mix - we have case study analyses, group presentations, and a final exam."
+
+AI: "What specific concerns do you have about AI use in these assessments?"
+You: "I'm worried students will use AI for the case studies and not develop analytical skills."
+
+**After 2-3 exchanges:**
+
+"Notice how the questions are getting more specific as the AI builds context. When it finally gives recommendations, they'll be tailored to MY situation - second-year business students, case study assessments, concerns about analytical skill development."
+
+**Key teaching point:**
+
+"The AI now has context it could never have guessed. The recommendations will address MY specific concerns, not generic 'AI policy' advice."
+
+**Practical tip:**
+
+This technique is particularly powerful when you're feeling stuck or overwhelmed. Instead of staring at a blank page, start a conversation. Let the AI's questions structure your thinking.
+
+**Transition:** "Now let's address the elephant in the room for educators..."
 :::
 
 ## Part 4: Assessment Reality
@@ -261,13 +523,42 @@ This is particularly powerful when you're unsure where to start.
 ![](images/billboard-rule.png)
 
 ::: {.notes}
-Let's talk about the elephant in the room for educators: assessments.
+Let's talk about what keeps many educators up at night: assessments.
 
-Here's a simple test: **Run your assessment through AI.**
+**The uncomfortable truth:**
 
-If AI can complete it independently and get a pass, the assessment reveals what was already breakable.
+If you take most traditional assignments and run them through AI, the AI will produce a passing - sometimes excellent - response. This feels threatening. But I want to reframe it.
 
-**This isn't about banning AI. It's about designing better assessments.**
+**A simple test:**
+
+Take one of your assessments. Copy the brief into ChatGPT or Claude. See what it produces. If it generates something that would pass, that's valuable information.
+
+**Here's the reframe:**
+
+AI doesn't break assessments. It reveals what was already breakable.
+
+If an AI can complete your assessment without any genuine learning, what was the assessment actually measuring? The ability to follow instructions and produce formatted text? That's not what we intended to assess.
+
+**This is an opportunity:**
+
+The AI era is forcing us to be clearer about what we actually value:
+- Critical thinking (not just summarising)
+- Original analysis (not just describing)
+- Personal application (not just generic knowledge)
+- Process and reasoning (not just polished output)
+
+Assessments that measure these things are harder for AI to complete - and they're better assessments anyway.
+
+**The question to ask:**
+
+"What can my students do that AI can't?"
+- Apply knowledge to their specific context
+- Collect and analyse primary data
+- Reflect on their own learning journey
+- Defend their reasoning in real-time
+- Connect ideas to their personal experience
+
+**Transition:** "Let me share three practical approaches for AI-resilient assessment..."
 :::
 
 ## If AI Can Do Your Assignment...
@@ -289,18 +580,94 @@ If AI can complete it independently and get a pass, the assessment reveals what 
 - Include primary data they collected
 - Require unique perspective AI can't have
 
+::: {.notes}
+Let me elaborate on each option:
+
+**Option A: Process Documentation**
+
+Instead of pretending AI doesn't exist, make its use explicit and assessable.
+
+How it works:
+1. Students use AI to generate a draft
+2. They submit the full conversation transcript
+3. They annotate where AI was wrong, limited, or unhelpful
+4. They write a reflection on how their expertise improved the output
+
+What you're assessing:
+- Critical evaluation of AI output
+- Domain knowledge (can they spot errors?)
+- Ability to improve and refine
+- Metacognitive reflection
+
+**Option B: In-Class Components**
+
+Use AI as preparation, not submission.
+
+How it works:
+1. Students submit AI-generated draft BEFORE class
+2. In class, they critique and improve the draft
+3. They present key insights and defend their improvements
+4. Final submission includes in-class refinements
+
+What you're assessing:
+- Real-time thinking (can't be AI-generated)
+- Ability to defend ideas verbally
+- Improvement and revision skills
+- Engagement with feedback
+
+**Option C: Personal Application**
+
+Design for what AI can't know.
+
+How it works:
+1. Connect assignment to specific local context (this organisation, this market)
+2. Require primary data collection (interviews, surveys, observations)
+3. Ask for personal perspective and experience
+4. Include recent events AI's training doesn't cover
+
+What you're assessing:
+- Application, not just knowledge
+- Original data gathering
+- Personal insight and reflection
+- Contextual judgement
+
+**Key message:**
+
+These aren't workarounds to "catch cheaters." They're better assessments that develop skills students actually need. The AI era is pushing us toward assessment practices we should have adopted anyway.
+
+**Transition:** "Before we wrap up, let's talk about ethics and verification..."
+:::
+
 ## Part 5: Ethics & Next Steps
 
 ![](images/hallucination-trap.png)
 
 ::: {.notes}
+Let's return to where we started: Deloitte.
 
-Remember Deloitte? Here's why it happened:
+**Why hallucinations happen:**
 
-1. **AI doesn't know it's lying** - It generates plausible text
-2. **Confidence ≠ Accuracy** - AI sounds equally confident right or wrong
-3. **Pattern matching, not truth** - AI predicts likely responses
+Remember, AI is a pattern-matching system. It generates text that LOOKS like it should be true based on patterns in its training data.
 
+1. **AI doesn't know it's lying** - It has no concept of truth. It generates plausible text.
+
+2. **Confidence ≠ Accuracy** - AI sounds equally confident whether it's correct or completely wrong. There's no "uncertainty" signal.
+
+3. **Pattern matching, not truth-seeking** - If asked for a citation, it generates something that LOOKS like a citation. Whether that paper exists is irrelevant to the generation process.
+
+**The particular danger with citations:**
+
+AI is especially likely to hallucinate when asked for:
+- Specific citations (it generates plausible author names, journal titles, years)
+- Statistics (it generates numbers that feel right for the context)
+- Quotes (it generates what someone WOULD say, not what they DID say)
+- Recent events (its training data has a cutoff date)
+
+**What Deloitte got wrong:**
+
+They treated AI like a research assistant who had actually read the papers. But the AI never "read" anything - it generated plausible-sounding citations based on patterns. The consultants' failure was trusting without verifying.
+
+**Transition:** "So how do we avoid becoming the next cautionary tale?"
 :::
 
 
@@ -309,15 +676,37 @@ Remember Deloitte? Here's why it happened:
 ![](images/check.png)
 
 ::: {.notes}
-Before trusting any AI output, ask:
+Before trusting any AI output, ask these three questions:
 
-1. **Can I find this source independently?**
-2. **Does this statistic appear elsewhere?**
-3. **Does this make logical sense?**
+**1. Can I find this source independently?**
 
-If you can't verify it, don't use it.
+If AI gives you a citation, search for it. Not just the title - search for the author, the journal, the year. If you can't find it through Google Scholar, library databases, or the journal's website, it probably doesn't exist.
 
-Teach your students these same questions.
+Practical tip: Copy the exact title into Google Scholar. If it's real, you'll find it.
+
+**2. Does this statistic appear elsewhere?**
+
+If AI claims "73% of executives believe X," that statistic should appear in other sources. Unique, suspiciously specific statistics are red flags.
+
+Practical tip: Search for the exact number plus key terms. Real statistics get cited repeatedly.
+
+**3. Does this make logical sense?**
+
+Apply your domain expertise. Does this claim align with what you know about the field? Are there obvious contradictions? Does the reasoning hold up?
+
+Practical tip: If something seems too perfect, too convenient, or too aligned with what you wanted to hear, be extra sceptical.
+
+**The professional standard:**
+
+Ask yourself: "Would I stake my professional reputation on this being accurate?"
+
+If the answer is no, verify before using. If you can't verify it, don't use it. It's better to have less content than inaccurate content.
+
+**Teaching this to students:**
+
+These same questions should become habits for your students. Model the behaviour you want to see. When you use AI in your teaching, show them how you verify.
+
+**Transition:** "And finally, a simple rule for what to share with AI..."
 :::
 
 ## The Billboard Rule
@@ -326,26 +715,91 @@ Teach your students these same questions.
 
 > "Would I be comfortable if this appeared on a billboard?"
 
-**Never share:**
-
-- Student data or personal information
-- Confidential institutional data
-- Anything you wouldn't want made public
-
 ::: {.notes}
-This applies to us AND to our students. Model the behaviour you want to see.
+**The Billboard Rule:**
+
+Before you put anything into an AI system, imagine it appearing on a billboard in the middle of campus - or worse, on the front page of a newspaper. If that thought makes you uncomfortable, don't share it with AI.
+
+**Why this matters:**
+
+1. **Data persistence** - AI providers may retain your inputs for training or improvement
+2. **Security vulnerabilities** - No system is perfectly secure
+3. **Terms of service** - You may be granting rights you didn't intend
+4. **Professional obligations** - You may have confidentiality duties
+
+**What you should NEVER share with AI:**
+
+- **Student data** - Names, grades, personal circumstances, health information
+- **Confidential institutional data** - Strategic plans, financial details, personnel matters
+- **Personal information about others** - Without their explicit consent
+- **Anything covered by NDA or confidentiality agreements**
+- **Research data before publication** - Especially in competitive fields
+
+**What's generally acceptable:**
+
+- Generic questions about pedagogy or discipline
+- Publicly available information
+- Your own ideas and drafts (that you're comfortable sharing)
+- Hypothetical scenarios that don't identify real individuals
+
+**For students:**
+
+Teach them the same rule. Many students don't realise that:
+- AI conversations may not be private
+- Sharing others' work (for "feedback") may be problematic
+- Professional contexts will have stricter rules
+
+**Model the behaviour:**
+
+When you demonstrate AI in class, narrate your thinking: "I'm not going to paste the actual student essay because that's their work. Instead, I'll use a sample I wrote for this purpose."
+
+**Transition:** "Let's wrap up with the key takeaways..."
 :::
 
+## Key Takeaways
 ![](images/key-takeaways.png)
 
-## Key Takeaways
 
-1. **AI shame is real** - normalize thoughtful use
+1. **AI shame is real** - normalise thoughtful use
 2. **Instructions are everything** - clarity drives quality
 3. Use **multi-perspective prompting** (Board of Directors)
 4. **Challenge your ideas** (Devil's Advocate)
 5. Let AI **interview you** for better context (Reverse Prompting)
 6. **Always verify** - never trust blindly
+
+::: {.notes}
+Let me reinforce each of these:
+
+**1. AI shame is real - normalise thoughtful use**
+
+Don't hide your AI use. Don't be ashamed of exploring these tools. The more openly we discuss how we use AI, the faster we develop good practices. Model transparency for your students.
+
+**2. Instructions are everything - clarity drives quality**
+
+Forget the jargon. Just give clear instructions. Be specific about context, role, task, and format. The better your input, the better the output.
+
+**3. Multi-perspective prompting (Board of Directors)**
+
+Use AI to simulate multiple viewpoints. It's faster than consulting five colleagues and catches blind spots you'd miss alone. Adapt the "directors" to fit your context.
+
+**4. Challenge your ideas (Devil's Advocate)**
+
+Use AI to argue against your positions. Give it permission to be critical. The goal isn't to abandon your ideas - it's to hold them more intelligently.
+
+**5. Let AI interview you (Reverse Prompting)**
+
+When you don't know what to ask, let AI interview you first. The questions surface your implicit knowledge and lead to tailored recommendations.
+
+**6. Always verify - never trust blindly**
+
+AI hallucinates. It sounds confident even when wrong. Verify citations, check statistics, apply logical scrutiny. If you can't verify it, don't use it.
+
+**The meta-message:**
+
+You don't need to become an AI expert. You need to develop judgement about when and how to use these tools. That judgement comes from practice, reflection, and conversation with colleagues.
+
+**Transition:** "Before you leave, I want you to make one commitment..."
+:::
 
 ## Your One Commitment
 
@@ -358,9 +812,46 @@ Before you leave, think about:
 - Run your assessment through AI to see what happens
 
 ::: {.notes}
+**The importance of starting small:**
+
+The biggest barrier to learning any new skill is the gap between knowing and doing. You now know several techniques. The question is whether you'll actually try them.
+
+**Why small experiments work:**
+
+1. **Low stakes** - If it doesn't work, you've lost nothing
+2. **Quick feedback** - You learn immediately what works for you
+3. **Builds confidence** - Small successes lead to bigger experiments
+4. **Creates stories** - You'll have experiences to share with colleagues
+
+**Three concrete experiments:**
+
+**Option 1: Draft feedback on student work**
+
+Next time you're marking, try this:
+- Paste a student's work into AI (anonymised if needed)
+- Ask AI to draft constructive feedback
+- Review, edit, and personalise before sending
+- Reflect: What did AI do well? What did you need to change?
+
+**Option 2: Board of Directors on a current decision**
+
+Think of something you're actually working on. Run the Board of Directors prompt with relevant stakeholders. See what perspectives emerge that you hadn't considered.
+
+**Option 3: Stress-test an assessment**
+
+Take one of your assessment briefs. Paste it into AI. See what it produces. Ask yourself: What does this tell me about what my assessment is actually measuring?
+
+**Share with colleagues:**
+
+Whatever you try, tell someone about it. Share what worked, what didn't, what surprised you. This is how we build collective knowledge and break through AI shame.
+
+**The goal:**
+
+You're not trying to become an AI expert overnight. You're trying to develop judgement - the kind of professional judgement that knows when AI helps, when it doesn't, and how to use it responsibly.
+
 Start small. Scale what works. Share with colleagues.
 
-The goal isn't to become an AI expert overnight. It's to develop judgment about when and how to use these tools.
+**Transition:** "Thank you for your attention. I'm happy to take questions..."
 :::
 
 ## Questions
@@ -369,14 +860,32 @@ The goal isn't to become an AI expert overnight. It's to develop judgment about 
 ![](images/website.png)
 
 ::: {.notes}
-
 **Resources available on the companion website:**
 
-- All prompts from today's session
-- Deeper reading on AI concepts
-- Interactive diagnostic for personalised learning paths
-- Ethics and integrity guidelines
-- Style Mirror tool (help AI write in your voice)
+- **Educator Handout** - All prompts from today's session, ready to copy and paste
+- **Diagnostic Quiz** - Get personalised recommendations for where to start based on your experience level
+- **Deep-Dive Guides** - What is AI, What are LLMs, CRAFT prompting framework, Seven Techniques
+- **Ethics and Integrity Guidelines** - More detailed guidance on responsible use
+- **Style Mirror Tool** - Help AI learn to write in your voice (great for drafting feedback)
+- **Deloitte Case Study** - Full details on the hallucination incidents we discussed
 
-Thank you for your attention. I'm happy to take any questions.
+**If they haven't scanned the QR code:**
+
+"If you haven't already, please scan the QR code or visit the URL to access the companion website. All the prompts we used today are there, plus deeper reading if you want to explore further."
+
+**Handling questions:**
+
+Common questions you might receive:
+
+- "Which AI tool should I use?" → They're all similar for basic use. Gemini is free and integrates with Google. ChatGPT is most popular. Claude is known for nuanced responses. Try a few and see what feels right.
+
+- "How do I know if students are using AI?" → Detection is unreliable. Focus on assessment design that makes AI use visible or less advantageous, rather than detection.
+
+- "What about copyright/IP?" → Complex area. Generally, using AI for your own work preparation is fine. Publishing AI-generated content raises questions. Check your institution's policies.
+
+- "Is this really different from Google?" → Fundamentally, yes. Google finds existing information. AI generates new text. The verification requirements are different.
+
+**Closing:**
+
+"Thank you for your attention and participation. The educators who will thrive in this era aren't those who avoid AI or embrace it uncritically. They're those who develop the judgement to use it wisely - and model that wisdom for their students. I hope today has been a useful step in that direction."
 :::
